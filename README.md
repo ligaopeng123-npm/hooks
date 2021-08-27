@@ -17,14 +17,14 @@ type PollerProps = {
 	callBack?: (args: PollerMark) => void; // 执行回调
     asyncCallBack?: (args: PollerMark) => Promise<any>; // 异步回调器
 }
-// 同步调度
+// 同步轮询
 const [time, startPoller, stopPoller] = usePoller({delay: 5000, callBack: (params:PollerMark)=> {
     if (params.time > 10000) {
 				stopPoller();
 				return;
     }
 }});
-// 异步调度器
+// 异步轮询
 const [asyncTime, startAsyncPoller, stopAsyncPoller] = usePoller({
 		delay: 5000,
 		asyncCallBack: async (params) => {
