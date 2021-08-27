@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {useClock, ClockDate, usePoller} from '../.';
 import {useEffect} from "react";
+import {ClockDate, useClock, usePoller} from "../src";
 
 const App = () => {
 	const clock: ClockDate = useClock();
@@ -9,6 +9,7 @@ const App = () => {
 	const [asyncTime, startAsyncPoller, stopAsyncPoller] = usePoller({
 		delay: 1200,
 		asyncCallBack: async (params) => {
+			console.log('params', params);
 			if (params.time > 10000) {
 				stopAsyncPoller();
 				return;
