@@ -1,0 +1,14 @@
+*.log
+.DS_Store
+node_modules
+example/node_modules
+example/package-lock.json
+.cache
+dist
+package-lock.json
+.npmignore
+yarn.lock
+.parcel-cache
+*.log
+.idea
+,vscode
