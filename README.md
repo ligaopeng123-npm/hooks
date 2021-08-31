@@ -79,4 +79,3 @@ useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 
 ```
 
 
-
