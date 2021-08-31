@@ -78,3 +78,5 @@ type UseEasingProps = {
 useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
 ```
 
+
+
