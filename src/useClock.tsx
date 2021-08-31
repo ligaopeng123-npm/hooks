@@ -22,7 +22,7 @@ export type ClockDate = {
 const getClockDate = (time: number) => {
 	return {
 		ymd: formatTimestamp(time, 'yyyy-MM-dd'),
-		hms: formatTimestamp(time, 'dd HH:mm:ss'),
+		hms: formatTimestamp(time, 'HH:mm:ss'),
 		week: getWeekCN(new Date(time))
 	}
 };

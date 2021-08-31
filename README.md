@@ -56,3 +56,25 @@ type ClockDate = {
 const {ymd, hms, week} = useClock();
 ```
 
+#### useEasing(props: UseEasingProps) : number;
+
+`缓动函数【参考(https://echarts.apache.org/examples/zh/editor.html?c=line-easing)】`
+
+```typescript
+type EasingType = 'linear' | 'quadraticIn' | 'quadraticOut' | 'quadraticInOut'
+	| 'cubicIn' | 'cubicOut' | 'cubicInOut' | 'quarticIn' | 'quarticOut' | 'quarticInOut'
+	| 'quinticIn' | 'quinticOut' | 'quinticInOut' | 'sinusoidalIn' | 'sinusoidalOut'
+	| 'sinusoidalInOut' | 'exponentialIn' | 'exponentialOut' | 'exponentialInOut'
+	| 'circularIn' | 'circularOut' | 'circularInOut' | 'elasticIn' | 'elasticOut'
+	| 'elasticInOut' | 'backIn' | 'backOut' | 'backInOut' | 'bounceIn' | 'bounceOut'
+	| 'bounceInOut';
+
+type UseEasingProps = {
+	duration?: number; // 持续时间 毫秒
+	intervals?: number; // 执行间隔
+	easingType: EasingType; // 执行动画类型
+}
+
+useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
+```
+

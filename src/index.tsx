@@ -4,4 +4,6 @@ export {ClockDate as ClockDate} from "./useClock";
 // 轮询调度器
 export {default as usePoller} from "./usePoller";
 export {PollerProps as PollerProps} from "./usePoller";
+// 缓动函数
+export {default as useEasing} from "./useEasing";
 

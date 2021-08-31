@@ -1,7 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {useEffect} from "react";
-import {ClockDate, useClock, usePoller} from "../src";
+import {ClockDate, useClock, usePoller, useEasing} from "../src";
+
+const pSl = {
+
+}
 
 const App = () => {
 	const clock: ClockDate = useClock();
@@ -29,19 +33,26 @@ const App = () => {
 			}, 2000)
 		}, 10009);
 	}, []);
+	
+	const useCurrentData = useEasing({duration: 60000, easingType: "cubicOut", intervals: 1000});
 	return (
 		<div>
-			<p>useClock</p>
+			<h3>useClock</h3>
 			{
-				clock.ymd + clock.hms + clock.week
+				`${clock.ymd} ${clock.hms} ${clock.week}`
 			}
-			<p>usePoller</p>
+			<h3>usePoller</h3>
 			{
 				time
 			}
-			<p>异步usePoller</p>
+			<h3>异步usePoller</h3>
 			{
 				asyncTime
+			}
+			
+			<h3>useEasing 缓动函数</h3>
+			{
+				useCurrentData
 			}
 		</div>
 	);
