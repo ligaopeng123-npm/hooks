@@ -13,7 +13,7 @@ import {useEffect, useState} from 'react';
 import {isFunction, isUndefined} from "@gaopeng123/utils";
 
 export type PollerMark = {
-	states: any;
+	states: 'stop' | 'start' | number;
 	props?: any; // 上次callBack、asyncCallBack返回的结果
 	time: number; // 执行时间
 	startStamp: number; // 轮询开始时间
@@ -22,18 +22,19 @@ export type PollerMark = {
 }
 
 export type PollerProps = {
-	delay?: number; // 执行时间
+	delay?: number; // 执行间隔
+	immediate?: boolean; // 是否立即执行 还是由startPoller开启 默认立即执行
 	callBack?: (date: PollerMark) => void; // 执行回调
 	asyncCallBack?: (args: PollerMark) => Promise<any>;
 }
 
 const usePoller = (props: PollerProps): [number, () => void, () => void] => {
-	const {delay, callBack, asyncCallBack} = props;
+	const {delay, callBack, asyncCallBack, immediate} = props;
 	// 日期时间戳记录
 	const [dateStamp, setDateStamp] = useState<number>(Date.now());
 	// 轮询记录
 	const [pollMark, setPollMark] = useState<PollerMark>({
-		states: 0,
+		states: immediate === false ? 'stop' : 0,
 		time: 0,
 		startStamp: dateStamp,
 		currentStamp: dateStamp, // 当前时刻
@@ -88,6 +89,7 @@ const usePoller = (props: PollerProps): [number, () => void, () => void] => {
 			}
 		}
 	}, [pollMark.states]);
+	
 	return [dateStamp, () => {
 		// 开启轮询
 		const startStamp = Date.now();

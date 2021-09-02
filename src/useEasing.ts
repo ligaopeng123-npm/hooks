@@ -213,6 +213,7 @@ export const easingFuncs = {
 };
 
 type UseEasingProps = {
+	immediate?: boolean; // 是否立即执行 还是由startPoller开启 默认立即执行
 	duration?: number; // 持续时间 毫秒
 	intervals?: number; // 执行间隔
 	easingType: EasingType; // 执行动画类型
@@ -223,17 +224,29 @@ type Easing = {
 	timers: number; // 执行次数
 }
 // duration 持续时间
-const useEasing = (props: UseEasingProps): [number, () => void] => {
-	const {intervals, duration, easingType} = Object.assign({
+const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
+	const {intervals, duration, easingType, immediate} = Object.assign({
+		immediate: true,
 		duration: 1000,
 		intervals: 100,
 		easingType: 'cubicOut'
 	}, props);
+	/**
+	 * 设置状态
+	 */
 	const [easing, setEasing] = useState<Easing>({current: 0, timers: 0});
-	const [time, startPoller, stopPoller] = usePoller({delay: intervals});
-	
+	/**
+	 * 使用轮询器
+	 */
+	const [time, startPoller, stopPoller] = usePoller({delay: intervals, immediate});
+	/**
+	 * 如果非立即执行 则不处理
+	 */
 	useEffect(() => {
-		setEasing(Object.assign({}, easing, {timers: easing.timers + 1}));
+		if (immediate === false && !easing.timers) {
+		} else {
+			setEasing(Object.assign({}, easing, {timers: easing.timers + 1}));
+		}
 	}, [time]);
 	
 	useEffect(() => {
@@ -244,12 +257,22 @@ const useEasing = (props: UseEasingProps): [number, () => void] => {
 		if (easing.timers && isFunction(easingFuncs[easingType])) {
 			// 可执行次数
 			const current = easingFuncs[easingType](easing.timers * (intervals / duration));
-			setEasing(Object.assign({}, easing,
+			setEasing(Object.assign(
+				{},
+				easing,
 				{current: current > 1 ? 1 : current})
 			)
 		}
 	}, [easing.timers]);
-	return [easing.current, stopPoller];
+	
+	return [easing.current,
+		() => {
+			startPoller();
+			setEasing(Object.assign({current: 0}, easing, {timers: 1}));
+		}, () => {
+			stopPoller();
+			// setEasing(Object.assign({}, easing, {timers: 0}));
+		}];
 };
 
 export default useEasing;
