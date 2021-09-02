@@ -223,7 +223,7 @@ type Easing = {
 	timers: number; // 执行次数
 }
 // duration 持续时间
-const useEasing = (props: UseEasingProps) => {
+const useEasing = (props: UseEasingProps): [number, () => void] => {
 	const {intervals, duration, easingType} = Object.assign({
 		duration: 1000,
 		intervals: 100,
@@ -249,7 +249,7 @@ const useEasing = (props: UseEasingProps) => {
 			)
 		}
 	}, [easing.timers]);
-	return easing.current;
+	return [easing.current, stopPoller];
 };
 
 export default useEasing;

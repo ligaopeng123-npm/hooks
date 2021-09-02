@@ -58,7 +58,7 @@ const {ymd, hms, week} = useClock();
 
 #### useEasing(props: UseEasingProps) : number;
 
-`缓动函数【参考(https://echarts.apache.org/examples/zh/editor.html?c=line-easing)】`
+`缓动函数`[参考](https://echarts.apache.org/examples/zh/editor.html?c=line-easing)
 
 ```typescript
 type EasingType = 'linear' | 'quadraticIn' | 'quadraticOut' | 'quadraticInOut'
@@ -75,7 +75,7 @@ type UseEasingProps = {
 	easingType: EasingType; // 执行动画类型
 }
 
-useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
+const [easing, stop] = useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
 ```
 
 

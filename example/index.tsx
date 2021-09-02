@@ -3,9 +3,7 @@ import * as ReactDOM from 'react-dom';
 import {useEffect} from "react";
 import {ClockDate, useClock, usePoller, useEasing} from "../src";
 
-const pSl = {
-
-}
+const pSl = {}
 
 const App = () => {
 	const clock: ClockDate = useClock();
@@ -25,16 +23,20 @@ const App = () => {
 			});
 		}
 	});
+	
+	const [useCurrentData, stopEasing] = useEasing({duration: 60000, easingType: "cubicOut", intervals: 1000});
+	
 	useEffect(() => {
 		setTimeout(() => {
 			stopPoller();
+			stopEasing();
 			setTimeout(() => {
 				startPoller();
 			}, 2000)
 		}, 10009);
 	}, []);
 	
-	const useCurrentData = useEasing({duration: 60000, easingType: "cubicOut", intervals: 1000});
+	
 	return (
 		<div>
 			<h3>useClock</h3>
