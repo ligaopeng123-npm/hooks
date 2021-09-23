@@ -80,4 +80,5 @@ type UseEasingProps = {
 const [easing,start, stop] = useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
 ```
 
-
+#### useMergeValue https://www.npmjs.com/package/use-merge-value
+`解决npm因peerDependencies导致安装失败问题`
