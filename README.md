@@ -143,4 +143,3 @@ type ScaleProps = {
 };
 const scale = useScale({width: 1920, height: 1080});
 ```
-
