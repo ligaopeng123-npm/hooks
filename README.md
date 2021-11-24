@@ -1,6 +1,23 @@
-#### usePoller: (props: PollerProps): [number, () => void, () => void]
 
-`轮询器`
+
+# hooks
+
+## 介绍
+
+> [!NOTE]
+> **@gaopeng123/hooks 是一个react hooks库，收集一些常用的hooks。**
+> 
+
+## 下载
+
+```shell
+npm i @gaopeng123/hooks
+or yarn add @gaopeng123/hooks
+```
+
+## usePoller: (props: PollerProps): [number, () => void, () => void]
+
+`轮询器,包括同步轮询，异步轮询`
 
 ```typescript
 type PollerMark = {
@@ -18,13 +35,23 @@ type PollerProps = {
 	callBack?: (args: PollerMark) => void; // 执行回调
     asyncCallBack?: (args: PollerMark) => Promise<any>; // 异步回调器
 }
+```
+
+> [!WARNING]
+> **此处需要注意，调用轮询器stopPoller后需要return，才能停止**
+
+```typescript
 // 同步轮询
 const [time, startPoller, stopPoller] = usePoller({delay: 5000, callBack: (params:PollerMark)=> {
     if (params.time > 10000) {
-				stopPoller();
-				return;
+        stopPoller();
+        return;// TODO 此处需要return; 否则无法停止
     }
 }});
+
+```
+
+```typescript
 // 异步轮询
 const [asyncTime, startAsyncPoller, stopAsyncPoller] = usePoller({
 		delay: 5000,
@@ -43,7 +70,7 @@ const [asyncTime, startAsyncPoller, stopAsyncPoller] = usePoller({
 	});
 ```
 
-#### useClock (): ClockDate
+## useClock (): ClockDate
 
 `时钟器`
 
@@ -57,7 +84,7 @@ type ClockDate = {
 const {ymd, hms, week} = useClock();
 ```
 
-#### useEasing(props: UseEasingProps) : number;
+## useEasing(props: UseEasingProps) : number;
 
 `缓动函数`[参考](https://echarts.apache.org/examples/zh/editor.html?c=line-easing)
 
@@ -77,8 +104,43 @@ type UseEasingProps = {
 	easingType: EasingType; // 执行动画类型
 }
 
-const [easing,start, stop] = useEasing({duration: 60000, intervals: 1000, easingType： 'cubicOut'}); // 0 - 1之间的数
+const [easing,start, stop] = useEasing({duration: 60000, intervals: 1000, easingType: 'cubicOut'}); // 0 - 1之间的数
 ```
 
-#### useMergeValue https://www.npmjs.com/package/use-merge-value
+## useMergeValue 
+
+#### https://www.npmjs.com/package/use-merge-value
+
 `解决npm因peerDependencies导致安装失败问题`
+
+## useResize(props:ResizeProps):WindowSize
+
+`监听窗口变化，返回窗口尺寸`
+
+```typescript
+type ResizeProps = {
+    wait?: number; // 等待时间
+}
+type WindowSize = {
+    availWidth: number;
+    availHeight: number;
+    width: number;
+    height: number;
+    screenWidth: number;
+    screenHeight: number;
+};
+```
+
+## useScale(props?: ScaleProps):{x: number,y:number}
+
+`监听窗口变化，动态缩放当前dom`
+
+```typescript
+type ScaleProps = {
+	scaleDom?: any; // 缩放的dom 如果不传 默认为body
+	width?: number; // 理想宽
+	height?: number; // 要求的理想宽高 小于或者大于该数据后进行缩放
+};
+const scale = useScale({width: 1920, height: 1080});
+```
+

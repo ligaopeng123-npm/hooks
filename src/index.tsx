@@ -10,3 +10,7 @@ export {default as useEasing} from "./useEasing";
 export {default as useMergeValue} from "./merge-value-hooks";
 // useResize 窗口抖动事件
 export {default as useResize} from "./useResize";
+/**
+ * 窗口抖动时重置比例
+ */
+export {default as useScale} from "./useScale";
