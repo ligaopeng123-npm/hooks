@@ -1,5 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+/**
+ * 如果未production webpack会编译文档docs
+ * @type {string}
+ */
 const NODE_ENV = process.env.NODE_ENV.trimEnd();
 
 module.exports = {
