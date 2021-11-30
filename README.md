@@ -24,7 +24,7 @@ or yarn add @gaopeng123/hooks
     width="100%"
     scrolling="no"
     title="hooks"
-    src="https://ligaopeng123-npm.github.io/hooks/#/#/useEasing"
+    src="https://ligaopeng123-npm.github.io/hooks/#/#/useClock"
     frameborder="no"
     loading="lazy"
     allowtransparency="true"
