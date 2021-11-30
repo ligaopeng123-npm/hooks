@@ -14,13 +14,19 @@ import {useResize} from "../../src";
 
 type TestUseResizeProps = {};
 const TestUseResize: React.FC<TestUseResizeProps> = (props) => {
-	const windowSize = useResize();
-	return (
-		<React.Fragment>
-			<h3>windowSize</h3>
-			{JSON.stringify(windowSize, null, 4)}
-		</React.Fragment>
-	)
+    const windowSize: any = useResize();
+    const list = Object.keys(windowSize);
+    return (
+        <React.Fragment>
+            <h3>windowSize</h3>
+            {
+                list.map((key, index) => {
+                    const laster = list[index - 1];
+                    return index % 2 ? <p>{laster}: {windowSize[laster]}, {key} : {windowSize[key]},</p> : null
+                })
+            }
+        </React.Fragment>
+    )
 };
 
 export default TestUseResize;
