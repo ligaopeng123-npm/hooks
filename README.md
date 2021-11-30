@@ -13,6 +13,25 @@ npm i @gaopeng123/hooks
 or yarn add @gaopeng123/hooks
 ```
 
+## 文档
+
+[https://ligaopeng123-npm.github.io/utils/#/md/hooks](https://ligaopeng123-npm.github.io/utils/#/md/hooks)
+
+## 预览
+
+```iframe
+    height="600"
+    width="100%"
+    scrolling="no"
+    title="hooks"
+    src="https://ligaopeng123-npm.github.io/hooks/#/#/useEasing"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+    allowfullscreen="true"
+    textContent="See the Pen <a href='https://codepen.io/desandro/pen/XWNWPve'>Zdog trefoil</a> by Dave DeSandro (<a href='https://codepen.io/desandro'>@desandro</a>) on <a href='https://codepen.io'>CodePen</a>."
+```
+
 ## usePoller: (props: PollerProps): [number, () => void, () => void]
 
 `轮询器,包括同步轮询，异步轮询`
