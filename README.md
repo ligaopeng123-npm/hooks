@@ -20,7 +20,7 @@ or yarn add @gaopeng123/hooks
 ## 预览
 
 ```iframe
-    height="600"
+    height="300"
     width="100%"
     scrolling="no"
     title="hooks"
