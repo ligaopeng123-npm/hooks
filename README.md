@@ -15,7 +15,7 @@ or yarn add @gaopeng123/hooks
 
 ## 文档
 
-[https://ligaopeng123-npm.github.io/utils/#/md/hooks](https://ligaopeng123-npm.github.io/utils/#/md/hooks)
+[https://ligaopeng123-npm.github.io/utils/#/md/hooks/index](https://ligaopeng123-npm.github.io/utils/#/md/hooks/index)
 
 ## 预览
 
