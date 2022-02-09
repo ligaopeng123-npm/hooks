@@ -153,4 +153,5 @@ type WindowSize = {
 * [useScale](./src/useScale/README.md)：监听窗口变化，动态缩放当前dom。
 * [useScale](./src/useScale/README.md)：监听窗口变化，动态缩放当前dom。
 * [useScale](./src/useScale/README.md)：监听窗口变化，动态缩放当前dom。
+* [useScale](./src/useScale/README.md)：监听窗口变化，动态缩放当前dom。
 
