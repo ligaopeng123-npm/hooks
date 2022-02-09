@@ -11,7 +11,7 @@
  **********************************************************************/
 import {useEffect, useState} from 'react';
 import {formatTimestamp, getWeekCN} from "@gaopeng123/utils";
-import usePoller from "./usePoller";
+import usePoller from "../usePoller/usePoller";
 
 export type ClockDate = {
 	ymd: string, // 年月日

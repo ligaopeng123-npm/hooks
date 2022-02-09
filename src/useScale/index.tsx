@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import React, {useState, useEffect} from 'react';
-import useResize from "./useResize";
+import useResize from "../useResize/useResize";
 import {isElement} from "@gaopeng123/utils";
 
 type ScaleProps = {
@@ -25,13 +25,13 @@ const useScale = (props?: ScaleProps) => {
 		scaleDom,
 		width, height,
 	} = Object.assign({width: 1920, height: 1080}, props);
-	
+
 	const {availWidth, availHeight} = useResize();
-	
+
 	useEffect(() => {
 		setScale({x: availWidth / width, y: availHeight / height});
 	}, [scaleDom, availWidth, availHeight, width, height]);
-	
+
 	useEffect(() => {
 		let _scaleDom;
 		if (scaleDom) {

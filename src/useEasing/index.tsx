@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import {useEffect, useState} from "react";
-import usePoller from "./usePoller";
+import usePoller from "../usePoller/usePoller";
 import {isFunction} from "@gaopeng123/utils";
 
 export type EasingType = 'linear' | 'quadraticIn' | 'quadraticOut' | 'quadraticInOut'
@@ -169,9 +169,9 @@ export const easingFuncs = {
 			return -0.5 * (a * Math.pow(2, 10 * (k -= 1)) * Math.sin((k - s) * (2 * Math.PI) / p));
 		}
 		return a * Math.pow(2, -10 * (k -= 1)) * Math.sin((k - s) * (2 * Math.PI) / p) * 0.5 + 1;
-		
+
 	},
-	
+
 	// 在某一动画开始沿指示的路径进行动画处理前稍稍收回该动画的移动
 	backIn: function (k: number): number {
 		let s = 1.70158;
@@ -188,7 +188,7 @@ export const easingFuncs = {
 		}
 		return 0.5 * ((k -= 2) * k * ((s + 1) * k + s) + 2);
 	},
-	
+
 	// 创建弹跳效果
 	bounceIn: function (k: number): number {
 		return 1 - easingFuncs.bounceOut(1 - k);
@@ -248,7 +248,7 @@ const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
 			setEasing(Object.assign({}, easing, {timers: easing.timers + 1}));
 		}
 	}, [time]);
-	
+
 	useEffect(() => {
 		if (easing.current >= 1) {
 			stopPoller();
@@ -264,7 +264,7 @@ const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
 			)
 		}
 	}, [easing.timers]);
-	
+
 	return [easing.current,
 		() => {
 			startPoller();
