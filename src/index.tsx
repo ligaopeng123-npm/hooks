@@ -7,7 +7,7 @@ export {PollerProps as PollerProps} from "./usePoller";
 // 缓动函数
 export {default as useEasing} from "./useEasing";
 //useMergeValue  useResize
-export {default as useMergeValue} from "./merge-value-hooks";
+export {default as useMergeValue} from "./useMergeValue";
 // useResize 窗口抖动事件
 export {default as useResize} from "./useResize";
 /**

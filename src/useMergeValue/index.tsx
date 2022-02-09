@@ -1,6 +1,6 @@
 import React from 'react';
 
-function useControlledState<T, R = T>(
+function useMergeValue<T, R = T>(
     defaultStateValue: T | (() => T),
     option?: {
         defaultValue?: T | (() => T);
@@ -37,4 +37,4 @@ function useControlledState<T, R = T>(
     return [(mergedValue as unknown) as R, triggerChange];
 }
 
-export default useControlledState;
+export default useMergeValue;
