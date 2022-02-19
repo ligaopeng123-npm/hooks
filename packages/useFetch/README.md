@@ -27,8 +27,6 @@ type CheckResponse = (props: any) => any;
 ```tsx
 import {useGet, usePost, useDel, usePut, usePatch} from "@gaopeng123/hooks.use-fetch";
 
-// 包含7个钩子
-
 const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
     const [loading, error, data] = useGet('/assets/test.json', {params: {name: '123'}}, (res) => {
         return res.data;
