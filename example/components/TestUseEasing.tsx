@@ -9,8 +9,8 @@
  * @date: 2021/10/29 9:22
  *
  **********************************************************************/
-import React, {useState, useEffect} from 'react';
-import {useEasing} from "../../src";
+import React from 'react';
+import {useEasing} from "../../packages/useEasing";
 
 type TestUseEasingProps = {};
 const TestUseEasing: React.FC<TestUseEasingProps> = (props) => {

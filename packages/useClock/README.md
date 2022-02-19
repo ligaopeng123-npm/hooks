@@ -1,16 +1,24 @@
-/**********************************************************************
- *
- * @模块名称: TestUseClock
- *
- * @模块用途: TestUseClock
- *
- * @创建人: pgli
- *
- * @date: 2021/10/29 9:19
- *
- **********************************************************************/
+# useClock 
+
+`时钟器`
+
+## 参数
+
+```typescript
+type ClockDate = {
+    ymd: string, // 年月日
+    hms: string, // 时分秒
+    week: string; // 周几
+}
+
+const {ymd, hms, week} = useClock();
+```
+
+## Usage
+
+```tsx
 import React from 'react';
-import {ClockDate, useClock} from "../../packages/useClock";
+import {useClock, ClockDate } form "@gaopeng123/hooks.use-clock"; // @gaopeng123/hooks
 
 type TestUseClockProps = {};
 const TestUseClock: React.FC<TestUseClockProps> = (props) => {
@@ -26,3 +34,5 @@ const TestUseClock: React.FC<TestUseClockProps> = (props) => {
 };
 
 export default TestUseClock;
+```
+

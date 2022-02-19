@@ -9,8 +9,8 @@
  * @date: 2021/10/29 9:21
  *
  **********************************************************************/
-import React, {useState, useEffect} from 'react';
-import {useEasing, usePoller} from "../../src";
+import React, {useEffect} from 'react';
+import {usePoller} from "../../packages/usePoller";
 
 type TestUsePollerProps = {};
 const TestUsePoller: React.FC<TestUsePollerProps> = (props) => {
@@ -31,12 +31,12 @@ const TestUsePoller: React.FC<TestUsePollerProps> = (props) => {
 			});
 		}
 	});
-	
+
 	useEffect(() => {
 		setTimeout(() => {
 			startAsyncPoller();
 		}, 2000);
-		
+
 		setTimeout(() => {
 			stopPoller();
 			setTimeout(() => {

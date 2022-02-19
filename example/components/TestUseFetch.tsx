@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import React, {useState, useEffect} from 'react';
-import {useGet, usePost, useDel, usePut, usePatch} from "../../src";
+import {useGet, usePost, useDel, usePut, usePatch} from "../../packages/useFetch";
 
 type TestUseFetchProps = {};
 const itemStyle = {

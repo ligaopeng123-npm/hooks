@@ -1,16 +1,30 @@
-/**********************************************************************
- *
- * @模块名称: TestUseResize
- *
- * @模块用途: TestUseResize
- *
- * @创建人: pgli
- *
- * @date: 2021/10/29 9:19
- *
- **********************************************************************/
+# useResize
+
+`(props:ResizeProps):WindowSize`
+
+`监听窗口变化，返回窗口尺寸`
+
+## 参数
+
+```typescript
+type ResizeProps = {
+    wait?: number; // 等待时间
+}
+type WindowSize = {
+    availWidth: number;
+    availHeight: number;
+    width: number;
+    height: number;
+    screenWidth: number;
+    screenHeight: number;
+};
+```
+
+## Usage
+
+```tsx
 import React from 'react';
-import {useResize} from "../../packages/useResize";
+import {useResize} from "gaopeng123/hooks.use-resize";
 
 type TestUseResizeProps = {};
 const TestUseResize: React.FC<TestUseResizeProps> = (props) => {
@@ -30,3 +44,6 @@ const TestUseResize: React.FC<TestUseResizeProps> = (props) => {
 };
 
 export default TestUseResize;
+
+```
+

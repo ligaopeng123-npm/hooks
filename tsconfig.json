@@ -1,7 +1,7 @@
 {
     // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
     "include": [
-        "src",
+        "packages",
         "types"
     ],
     "compilerOptions": {
@@ -10,34 +10,44 @@
             "dom",
             "esnext"
         ],
+        "paths": {
+            "@gaopeng123/hooks.ues-clock": [
+                "./packages/useClock/src"
+            ],
+            "@gaopeng123/hooks.ues-easimg": [
+                "./packages/useEasimg/src"
+            ],
+            "@gaopeng123/hooks.ues-fetch": [
+                "./packages/useFetch/src"
+            ],
+            "@gaopeng123/hooks.ues-merge-value": [
+                "./packages/useMergeValue/src"
+            ],
+            "@gaopeng123/hooks.ues-poller": [
+                "./packages/usePoller/src"
+            ],
+            "@gaopeng123/hooks.ues-resize": [
+                "./packages/useResize/src"
+            ],
+            "@gaopeng123/hooks.ues-scale": [
+                "./packages/useScale/src"
+            ]
+        },
         "outDir": "/dist",
         "importHelpers": true,
-        // output .d.ts declaration files for consumers
         "declaration": true,
-        // output .js.map sourcemap files for consumers
         "sourceMap": true,
-        // match output dir to input dir. e.g. dist/index instead of dist/src/index
         "rootDir": "./",
-        // stricter type-checking for stronger correctness. Recommended by TS
         "strict": true,
-        // linter checks for common issues
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        // noUnused* overlap with @typescript-eslint/no-unused-vars, can disable if duplicative
         "noUnusedLocals": false,
-        // 本地定义未使用报错
         "noUnusedParameters": false,
-        // use Node's module resolution algorithm, instead of the legacy TS one
         "moduleResolution": "node",
-        // transpile JSX to React.createElement
         "jsx": "react",
-        // interop between ESM and CJS modules. Recommended by TS
         "esModuleInterop": true,
-        // significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS
         "skipLibCheck": true,
-        // error out if import and file system have a casing mismatch. Recommended by TS
         "forceConsistentCasingInFileNames": true,
-        // `tsdx build` ignores this option, but it is commonly used when type-checking separately with `tsc`
         "noEmit": false
     }
 }
