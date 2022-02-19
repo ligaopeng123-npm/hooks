@@ -14,3 +14,12 @@ export {default as useResize} from "./useResize";
  * 窗口抖动时重置比例
  */
 export {default as useScale} from "./useScale";
+/**
+ * fetch处理
+ */
+export {default as useFetch} from "./useFetch";
+export {useGet as useGet} from "./useFetch";
+export {usePost as usePost} from "./useFetch";
+export {usePut as usePut} from "./useFetch";
+export {useDel as useDel} from "./useFetch";
+export {usePatch as usePatch} from "./useFetch";

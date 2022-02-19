@@ -40,3 +40,4 @@ or yarn add @gaopeng123/hooks
 * [useEasing](./src/useEasing/README.md)：缓动函数。
 * [useClock](./src/useClock/README.md)：时钟器。
 * [usePoller](./src/usePoller/README.md)：轮询器,包括同步轮询，异步轮询。
+* [useFetch](./src/useFetch/README.md)：请求函数

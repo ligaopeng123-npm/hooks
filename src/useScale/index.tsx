@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import React, {useState, useEffect} from 'react';
-import useResize from "../useResize/useResize";
+import useResize from "../useResize";
 import {isElement} from "@gaopeng123/utils";
 
 type ScaleProps = {

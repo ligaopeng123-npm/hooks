@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import {useEffect, useState} from "react";
-import usePoller from "../usePoller/usePoller";
+import usePoller from "../usePoller";
 import {isFunction} from "@gaopeng123/utils";
 
 export type EasingType = 'linear' | 'quadraticIn' | 'quadraticOut' | 'quadraticInOut'

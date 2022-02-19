@@ -42,7 +42,7 @@ module.exports = {
 							}]
 						],
 						plugins: [
-							
+
 							// [
 							//     '@babel/plugin-proposal-decorators',
 							//     {'legacy': true}
@@ -52,7 +52,7 @@ module.exports = {
 								{'loose': true} // 宽松模式
 							]
 							// '@babel/plugin-transform-runtime'，
-						
+
 						]
 					}
 				},
@@ -73,15 +73,15 @@ module.exports = {
 	output: {
 		filename: 'index.js',
 		libraryTarget: 'module', //module es6模式 umd模式
-		path: path.resolve(__dirname, NODE_ENV === 'production' ? 'docs' : 'dist')
+		path: path.resolve(__dirname, NODE_ENV === 'production' ? 'docs' : 'example')
 		// clean: true, // 清理冗余文件
 	},
 	target: 'web',
 	devServer: {
 		static: {
-			directory: path.join(__dirname, NODE_ENV === 'production' ? 'docs' : 'dist'),
+			directory: path.join(__dirname, NODE_ENV === 'production' ? 'docs' : 'example'),
 		},
-		// contentBase: path.resolve(__dirname, 'dist'),
+		// contentBase: path.resolve(__dirname, 'example'),
 		// 压缩代码 先注释
 		compress: NODE_ENV == 'production',
 		// 端口

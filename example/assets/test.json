@@ -1,0 +1,7 @@
+{
+    "code":200,
+    "data": {
+        "name": "example",
+        "version": "1.0.0"
+    }
+}

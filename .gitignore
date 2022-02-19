@@ -11,4 +11,5 @@ yarn.lock
 .parcel-cache
 *.log
 .idea
-,vscode
+.vscode
+*.d.ts
