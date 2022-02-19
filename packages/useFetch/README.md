@@ -25,7 +25,7 @@ type CheckResponse = (props: any) => any;
 ## Usage
 
 ```tsx
-import {useGet, usePost, useDel, usePut, usePatch} from "@gaopeng123/hooks";
+import {useGet, usePost, useDel, usePut, usePatch} from "@gaopeng123/hooks.use-fetch";
 
 // 包含7个钩子
 
