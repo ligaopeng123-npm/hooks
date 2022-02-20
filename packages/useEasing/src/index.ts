@@ -9,8 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useEasing} from "./useEasing";
-export {EasingType} from "./useEasing";
-export {easingFuncs} from "./useEasing";
-export {UseEasingProps} from "./useEasing";
-export {Easing} from "./useEasing";
+export {default as useEasing, easingFuncs} from "./useEasing";
+export type {EasingType, UseEasingProps, Easing} from "./useEasing";

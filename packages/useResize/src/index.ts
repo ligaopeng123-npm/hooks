@@ -10,4 +10,4 @@
  *
  ********************************************************************* */
 export {default as useResize} from "./useResize";
-export {ResizeProps} from "./useResize";
+export type {ResizeProps} from "./useResize";

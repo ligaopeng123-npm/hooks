@@ -10,4 +10,4 @@
  *
  ********************************************************************* */
 export {default as useClock} from "./useClock";
-export {ClockDate} from "./useClock";
+export type {ClockDate} from "./useClock";

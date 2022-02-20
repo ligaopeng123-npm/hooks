@@ -10,4 +10,4 @@
  *
  ********************************************************************* */
 export {default as useScale} from "./useScale";
-export {ScaleProps} from "./useScale";
+export type {ScaleProps} from "./useScale";

@@ -10,6 +10,4 @@
  *
  ********************************************************************* */
 export {default as usePoller} from "./usePoller";
-export {PollerMark} from "./usePoller";
-export {PollerProps} from "./usePoller";
-
+export type {PollerMark, PollerProps} from "./usePoller";
