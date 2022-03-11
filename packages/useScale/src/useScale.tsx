@@ -23,8 +23,11 @@ const useScale = (props?: ScaleProps) => {
     const [scale, setScale] = useState({x: 1, y: 1});
     const {
         scaleDom,
-        width, height,
+        width,
+        height,
     } = Object.assign({width: 1920, height: 1080}, props);
+
+    console.log(width, height,)
 
     const {availWidth, availHeight} = useResize();
 
@@ -37,13 +40,27 @@ const useScale = (props?: ScaleProps) => {
         if (scaleDom) {
             _scaleDom = scaleDom?.current || scaleDom;
         }
-        _scaleDom = isElement(_scaleDom) ? _scaleDom : document.querySelector('body');
-        if (_scaleDom && scale.x && scale.y) {
-            _scaleDom.style.transform = `scale(${scale.x}, ${scale.y})`;
-            _scaleDom.style.width = `${width}px`;
-            _scaleDom.style.height = `${height}px`;
-            _scaleDom.style['transform-origin'] = `0px 0px`;
+        // 获取当前需要缩放的dom 如果没有默认为body
+        _scaleDom = isElement(_scaleDom) ? _scaleDom : document.querySelector('div');
+        // 获取浏览器的可用宽高
+        const {clientWidth, clientHeight} = document.documentElement;
+        // 获取当前屏幕的真是比例
+        const clientRatio = clientWidth / clientHeight
+        // 计算默认的比例
+        const designRatio = width / height;
+        let scaleValue = clientWidth / width;
+        // 根据宽高比例来计算合适的缩放数据
+        if (clientRatio > designRatio) {
+            scaleValue = clientHeight / height
         }
+        const scaleDomStyle: any = _scaleDom.style;
+        scaleDomStyle.transformOrigin = 'left top';
+        scaleDomStyle.transform = `scale(${scaleValue}) translate(-50%, -50%)`;
+        scaleDomStyle.width = `${width}px`;
+        scaleDomStyle.height = `${height}px`;
+        scaleDomStyle.position = `absolute`;
+        scaleDomStyle.top = `50%`;
+        scaleDomStyle.left = `50%`;
     }, [scale]);
     return scale;
 };

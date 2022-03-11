@@ -22,7 +22,7 @@ const TestUseResize: React.FC<TestUseResizeProps> = (props) => {
             {
                 list.map((key, index) => {
                     const laster = list[index - 1];
-                    return index % 2 ? <p>{laster}: {windowSize[laster]}, {key} : {windowSize[key]},</p> : null
+                    return index % 2 ? <p key={key}>{laster}: {windowSize[laster]}, {key} : {windowSize[key]},</p> : null
                 })
             }
         </React.Fragment>

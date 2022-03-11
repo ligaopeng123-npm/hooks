@@ -12,18 +12,20 @@ import TestUseEasing from "./components/TestUseEasing";
 import TestUseResize from "./components/TestUseResize";
 import TestUseScale from "./components/TestUseScale";
 import TestUseFetch from "./components/TestUseFetch";
+import TestUseWorker from "./components/TestUseWorker";
 
 const App = () => {
     return (
         <React.Fragment>
-            <Router basename={`#`}>
+            <Router basename={`/`}>
                 <div className={`card`}>
                     <Link to="/useClock">useClock</Link>
                     <Link to="/usePoller">usePoller</Link>
                     <Link to="/useEasing">useEasing</Link>
                     <Link to="/useResize">useResize</Link>
                     <Link to="/useScale">useScale</Link>
-					<Link to="/useFetch">useFetch</Link>
+                    <Link to="/useFetch">useFetch</Link>
+                    <Link to="/useWorker">useWorker</Link>
                 </div>
                 <Switch>
                     <Route path="/useClock">
@@ -43,6 +45,9 @@ const App = () => {
                     </Route>
                     <Route path="/useFetch">
                         <TestUseFetch/>
+                    </Route>
+                    <Route path="/useWorker">
+                        <TestUseWorker/>
                     </Route>
                 </Switch>
             </Router>

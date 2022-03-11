@@ -17,20 +17,16 @@ const TestUseScale: React.FC<TestUseScaleProps> = (props) => {
     const scale = useScale({width: 1920, height: 1080});
     useEffect(() => {
         return () => {
-            // @ts-ignore
-            const body = document.querySelector('body');
-            if (body) {
-                body.style.transform = `scale(${1}, ${1})`;
-            }
+
         }
-    }, []);
+    }, [scale]);
     return (
-        <React.Fragment>
+        <div style={{backgroundColor: '#97fa04', width: '100%', height: '100%'}}>
             <h3>useScale</h3>
             scale: {
             JSON.stringify(scale, null, 2)
         }
-        </React.Fragment>
+        </div>
     )
 };
 
