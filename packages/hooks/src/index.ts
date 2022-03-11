@@ -21,3 +21,5 @@ export {useResize} from "@gaopeng123/hooks.use-resize";
 export type {ResizeProps} from "@gaopeng123/hooks.use-resize";
 export {useScale} from "@gaopeng123/hooks.use-scale";
 export type {ScaleProps} from "@gaopeng123/hooks.use-scale";
+export {useWorker} from "@gaopeng123/hooks.use-worker";
+export type {UseWorkerProps} from "@gaopeng123/hooks.use-worker";
