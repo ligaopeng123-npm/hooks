@@ -43,26 +43,26 @@ const useFetch = (url: string, options: Options, checkResponse?: CheckResponse) 
 export default useFetch;
 
 export const useGet = (url: string, options?: Options, checkResponse?: CheckResponse) => {
-    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.get}, options));
+    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.get}, options), checkResponse);
     return [loading, error, data];
 }
 
 export const usePost = (url: string, options?: Options, checkResponse?: CheckResponse) => {
-    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.post}, options));
+    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.post}, options), checkResponse);
     return [loading, error, data];
 }
 
 export const usePut = (url: string, options?: Options, checkResponse?: CheckResponse) => {
-    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.put}, options));
+    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.put}, options), checkResponse);
     return [loading, error, data];
 }
 
 export const useDel = (url: string, options?: Options, checkResponse?: CheckResponse) => {
-    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.del}, options));
+    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.del}, options), checkResponse);
     return [loading, error, data];
 }
 
 export const usePatch = (url: string, options?: Options, checkResponse?: CheckResponse) => {
-    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.patch}, options));
+    const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.patch}, options), checkResponse);
     return [loading, error, data];
 }
