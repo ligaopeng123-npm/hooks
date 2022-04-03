@@ -1,22 +1,19 @@
-import { useCallback, useRef, useEffect } from "react";
+import {useCallback, useEffect, useRef} from "react";
+import {createDebounce} from "@gaopeng123/utils.function";
+import type {DebounceOptions} from "@gaopeng123/utils.function";
 
 type Fn = (...props: any) => any;
-type Delay = number;
 type Dep = any[];
 
-export const useDebounce = (fn: Fn, delay: Delay = 200, dep: Dep = []) => {
+export const useDebounce = (fn: Fn, wait = 200, options: DebounceOptions = {}, dep: Dep = []) => {
     const {current} = useRef<any>({fn, timer: null});
     useEffect(function () {
         current.fn = fn;
     }, [fn]);
 
-    return useCallback(function f(...args) {
-        if (current.timer) {
-            clearTimeout(current.timer);
-        }
-        current.timer = setTimeout(() => {
-            // @ts-ignore
-            current.fn.call(this, ...args);
-        }, delay);
-    }, dep)
+    return useCallback(function f(...args: any) {
+        const debounce = createDebounce(current.fn, wait, options, current.timer);
+        // @ts-ignore
+        current.timer = debounce(...args)
+    }, dep);
 }

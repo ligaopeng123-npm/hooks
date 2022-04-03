@@ -1,23 +1,18 @@
-import { useCallback, useRef, useEffect } from "react";
+import {useCallback, useRef, useEffect} from "react";
+import {createThrottle, throttleOptions} from "@gaopeng123/utils.function";
+import type {ThrottleOptions} from "@gaopeng123/utils.function"
 
 type Fn = (...props: any) => any;
-type Delay = number;
-type Dep = any[];
 
-
-export const useThrottle = (fn: Fn, delay: Delay = 200, dep: Dep = []) => {
+export const useThrottle = (fn: Fn, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []) => {
     const {current} = useRef<any>({fn, timer: null});
     useEffect(function () {
         current.fn = fn;
     }, [fn]);
 
     return useCallback(function f(...args) {
-        if (!current.timer) {
-            current.timer = setTimeout(() => {
-                delete current.timer;
-            }, delay);
-            // @ts-ignore
-            current.fn.call(this, ...args);
-        }
+        const throttle = createThrottle(fn, wait, throttleOptions(options), current.timer);
+        // @ts-ignore
+        current.timer = throttle(...args);
     }, dep);
 }

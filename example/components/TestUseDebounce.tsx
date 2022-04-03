@@ -1,26 +1,20 @@
-# `useDebounce`
-
-> TODO: 去抖hooks
-
-`(fn: Fn, wait = 200, options: DebounceOptions = {}, dep: Dep = []) => Fn`
-
-```tsx
-export type DebounceOptions = {
-    leading: boolean; // 第一时间是否立即执行 后续在去抖
-    notDebounce?: (...arg: any) => any; // 在去抖过程中 有一些非去抖处理 可以添加此参数
-}
-```
-
-## Usage
-
-```tsx
+/**********************************************************************
+ *
+ * @模块名称: TestUseDebounce
+ *
+ * @模块用途: TestUseDebounce
+ *
+ * @创建人: pgli
+ *
+ * @date: 2022/4/3 10:12
+ *
+ **********************************************************************/
 import React, {useState} from 'react';
-import {useDebounce} from "@gaopeng123/hooks.use-debounce";
+import {useDebounce} from "../../packages/useDebounce";
 
 type TestUseDebounceProps = {};
 const TestUseDebounce: React.FC<TestUseDebounceProps> = (props) => {
     const [v, setV] = useState('');
-    // 
     const onChange = useDebounce((v: any) => {
         setV(v.target.value);
     })
@@ -33,4 +27,3 @@ const TestUseDebounce: React.FC<TestUseDebounceProps> = (props) => {
 };
 
 export default TestUseDebounce;
-```

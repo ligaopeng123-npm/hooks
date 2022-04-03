@@ -23,3 +23,7 @@ export {useScale} from "@gaopeng123/hooks.use-scale";
 export type {ScaleProps} from "@gaopeng123/hooks.use-scale";
 export {useWorker} from "@gaopeng123/hooks.use-worker";
 export type {UseWorkerProps} from "@gaopeng123/hooks.use-worker";
+export {useDebounce} from "@gaopeng123/hooks.use-debounce";
+export type {DebounceOptions} from "@gaopeng123/hooks.use-debounce";
+export {useThrottle} from "@gaopeng123/hooks.use-throttle";
+export type {ThrottleOptions} from "@gaopeng123/hooks.use-throttle";
