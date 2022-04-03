@@ -1,26 +1,41 @@
 {
-  "name": "usethrottle",
-  "version": "0.3.1",
-  "description": "> TODO: description",
-  "author": "ligaopeng123 <1170234932@qq.com>",
-  "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
-  "license": "MIT",
-  "main": "lib/useThrottle.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ligaopeng123-npm/hooks.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/ligaopeng123-npm/hooks/issues"
-  }
+	"name": "@gaopeng123/hooks.use-throttle",
+	"version": "0.3.1",
+	"description": "> TODO: description",
+	"author": "ligaopeng123 <1170234932@qq.com>",
+	"homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=10"
+	},
+	"directories": {
+		"lib": "src",
+		"test": "__tests__"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ligaopeng123-npm/hooks.git"
+	},
+	"scripts": {
+		"start": "tsdx watch",
+		"build": "tsdx build",
+		"test": "tsdx test --passWithNoTests",
+		"push": "npm publish --access public",
+		"lint": "tsdx lint",
+		"prepare": "tsdx build",
+		"size": "size-limit",
+		"analyze": "size-limit --why"
+	},
+	"bugs": {
+		"url": "https://github.com/ligaopeng123-npm/hooks/issues"
+	}
 }
