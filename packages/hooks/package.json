@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "hooks",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -59,7 +59,7 @@
     },
     "dependencies": {
         "@gaopeng123/hooks.use-clock": "^0.3.0",
-        "@gaopeng123/hooks.use-debounce": "^0.3.2",
+        "@gaopeng123/hooks.use-debounce": "^0.3.3",
         "@gaopeng123/hooks.use-easing": "^0.3.0",
         "@gaopeng123/hooks.use-fetch": "^0.3.1",
         "@gaopeng123/hooks.use-merge-value": "^0.3.0",
