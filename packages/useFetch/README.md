@@ -20,6 +20,8 @@ type Options = {
 }
 
 type CheckResponse = (props: any) => any;
+
+type Deps = any[];
 ```
 
 ## Usage
@@ -30,7 +32,7 @@ import {useGet, usePost, useDel, usePut, usePatch} from "@gaopeng123/hooks.use-f
 const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
     const [loading, error, data] = useGet('/assets/test.json', {params: {name: '123'}}, (res) => {
         return res.data;
-    });
+    }, []);
     
     // const [loading2, error2, data2] = usePost('/assets/test.json', {body: {name: '123'}}, (res) => {
     //    return res.data;
