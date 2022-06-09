@@ -17,9 +17,15 @@ const itemStyle = {
     padding: '0 16px'
 }
 const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
+    const [dep1, setDep1] = useState(1);
+    const [dep2, setDep2] = useState(2);
     const [loading, error, data] = useGet('/assets/test.json', {}, (res) => {
         return res.data;
-    });
+    }, [dep1, dep2]);
+
+    const onClick = () => {
+        setDep1(Math.random())
+    }
 
     if (loading) {
         return (<span>loading</span>)
@@ -31,7 +37,7 @@ const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
 
     return (
         <React.Fragment>
-            <h3>useGet</h3>
+            <h3 onClick={onClick}>useGet</h3>
             <div style={{display: 'flex', width: 500}}>
                 <div style={itemStyle}>loading: {loading}</div>
                 <div style={itemStyle}>error: {error}</div>
