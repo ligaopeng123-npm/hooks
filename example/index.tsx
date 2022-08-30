@@ -15,6 +15,7 @@ import TestUseFetch from "./components/TestUseFetch";
 import TestUseWorker from "./components/TestUseWorker";
 import TestUseDebounce from "./components/TestUseDebounce";
 import TestUseThrottle from "./components/TestUseThrottle";
+import TestUseZoom from "./components/TestUseZoom";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                     <Link to="/useEasing">useEasing</Link>
                     <Link to="/useResize">useResize</Link>
                     <Link to="/useScale">useScale</Link>
+                    <Link to="/useZoom">useZoom</Link>
                     <Link to="/useFetch">useFetch</Link>
                     <Link to="/useWorker">useWorker</Link>
                     <Link to="/useDebounce">useDebounce</Link>
@@ -43,6 +45,9 @@ const App = () => {
                     </Route>
                     <Route path="/useResize">
                         <TestUseResize/>
+                    </Route>
+                    <Route path="/useZoom">
+                        <TestUseZoom/>
                     </Route>
                     <Route path="/useScale">
                         <TestUseScale/>
