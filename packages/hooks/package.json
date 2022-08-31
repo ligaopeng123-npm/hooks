@@ -69,5 +69,6 @@
         "@gaopeng123/hooks.use-throttle": "^0.3.2",
         "@gaopeng123/hooks.use-worker": "^0.3.0",
         "@gaopeng123/hooks.use-zoom": "^0.3.8"
-    }
+    },
+    "gitHead": "af0d35788c211c3866bfa04d29cd9a81bfeba7bc"
 }
