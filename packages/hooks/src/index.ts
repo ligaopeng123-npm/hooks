@@ -29,3 +29,5 @@ export { useDebounce } from "@gaopeng123/hooks.use-debounce";
 export type { DebounceOptions } from "@gaopeng123/hooks.use-debounce";
 export { useThrottle } from "@gaopeng123/hooks.use-throttle";
 export type { ThrottleOptions } from "@gaopeng123/hooks.use-throttle";
+export { usePagination } from "@gaopeng123/hooks.use-pagination";
+export type { PaginationProps } from "@gaopeng123/hooks.use-pagination";

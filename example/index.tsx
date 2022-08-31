@@ -16,6 +16,7 @@ import TestUseWorker from "./components/TestUseWorker";
 import TestUseDebounce from "./components/TestUseDebounce";
 import TestUseThrottle from "./components/TestUseThrottle";
 import TestUseZoom from "./components/TestUseZoom";
+import TestUsePagination from "./components/TestUsePagination";
 
 const App = () => {
     return (
@@ -28,10 +29,12 @@ const App = () => {
                     <Link to="/useResize">useResize</Link>
                     <Link to="/useScale">useScale</Link>
                     <Link to="/useZoom">useZoom</Link>
+                    <br/>
                     <Link to="/useFetch">useFetch</Link>
                     <Link to="/useWorker">useWorker</Link>
                     <Link to="/useDebounce">useDebounce</Link>
                     <Link to="/useThrottle">useThrottle</Link>
+                    <Link to="/usePagination">usePagination</Link>
                 </div>
                 <Switch>
                     <Route path="/useClock">
@@ -63,6 +66,9 @@ const App = () => {
                     </Route>
                     <Route path="/useThrottle">
                         <TestUseThrottle/>
+                    </Route>
+                    <Route path="/usePagination">
+                        <TestUsePagination/>
                     </Route>
                 </Switch>
             </Router>
