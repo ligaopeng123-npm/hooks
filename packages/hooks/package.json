@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks",
-    "version": "0.3.7",
+    "version": "0.3.8",
     "description": "hooks",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -68,6 +68,6 @@
         "@gaopeng123/hooks.use-scale": "^0.3.0",
         "@gaopeng123/hooks.use-throttle": "^0.3.2",
         "@gaopeng123/hooks.use-worker": "^0.3.0",
-        "@gaopeng123/hooks.use-zoom": "^0.3.0"
+        "@gaopeng123/hooks.use-zoom": "^0.3.8"
     }
 }
