@@ -1,7 +1,10 @@
 {
-    "name": "@gaopeng123/hooks",
+    "name": "@gaopeng123/hooks.use-visibility",
     "version": "0.3.9",
-    "description": "hooks",
+    "description": "浏览器页面唤醒与隐藏",
+    "keywords": [
+        "visibility"
+    ],
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
     "license": "MIT",
@@ -26,6 +29,7 @@
         "url": "git+https://github.com/ligaopeng123-npm/hooks.git"
     },
     "scripts": {
+        "dev": "set NODE_ENV=development&&webpack serve",
         "start": "tsdx watch",
         "build": "tsdx build",
         "test": "tsdx test --passWithNoTests",
@@ -58,19 +62,6 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-clock": "^0.3.0",
-        "@gaopeng123/hooks.use-debounce": "^0.3.5",
-        "@gaopeng123/hooks.use-easing": "^0.3.0",
-        "@gaopeng123/hooks.use-fetch": "^0.3.7",
-        "@gaopeng123/hooks.use-merge-value": "^0.3.0",
-        "@gaopeng123/hooks.use-pagination": "^0.3.9",
-        "@gaopeng123/hooks.use-poller": "^0.3.0",
-        "@gaopeng123/hooks.use-resize": "^0.3.0",
-        "@gaopeng123/hooks.use-scale": "^0.3.0",
-        "@gaopeng123/hooks.use-throttle": "^0.3.2",
-        "@gaopeng123/hooks.use-visibility": "^0.3.9",
-        "@gaopeng123/hooks.use-worker": "^0.3.0",
-        "@gaopeng123/hooks.use-zoom": "^0.3.9"
-    },
-    "gitHead": "af0d35788c211c3866bfa04d29cd9a81bfeba7bc"
+        "@gaopeng123/utils.function": "^0.5.2"
+    }
 }
