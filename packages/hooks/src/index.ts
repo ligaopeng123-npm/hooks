@@ -31,3 +31,5 @@ export { useThrottle } from "@gaopeng123/hooks.use-throttle";
 export type { ThrottleOptions } from "@gaopeng123/hooks.use-throttle";
 export { usePagination } from "@gaopeng123/hooks.use-pagination";
 export type { PaginationProps } from "@gaopeng123/hooks.use-pagination";
+export { useVisibility } from "@gaopeng123/hooks.use-visibility";
+export type { VisibilityProps } from "@gaopeng123/hooks.use-visibility";
