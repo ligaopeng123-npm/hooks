@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-pagination",
-    "version": "0.3.9",
+    "version": "0.3.10",
     "description": "分页器",
     "keywords": [
         "pagination"
