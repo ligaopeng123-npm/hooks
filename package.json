@@ -23,6 +23,7 @@
         "build": "lerna exec --ignore=@gaopeng123/hooks -- npm run build",
         "test": "lerna exec --ignore=@gaopeng123/hooks -- npm run test",
         "push": "lerna publish",
+        "pushAll": "lerna exec -- npm run push",
         "lint": "tsdx lint",
         "prepare": "tsdx build",
         "size": "size-limit",

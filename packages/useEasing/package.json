@@ -60,5 +60,6 @@
     "dependencies": {
         "@gaopeng123/hooks.use-poller": "^0.4.0",
         "@gaopeng123/utils.types": "^0.4.0"
-    }
+    },
+    "gitHead": "c6935f47bec2ffecbc975bf527dee5a56d689369"
 }
