@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-clock",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "时钟时间",
     "keywords": [
         "clock"
@@ -61,7 +61,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-poller": "^0.4.0",
+        "@gaopeng123/hooks.use-poller": "^0.4.1",
         "@gaopeng123/utils.date": "^0.4.0"
     },
     "gitHead": "c6935f47bec2ffecbc975bf527dee5a56d689369"
