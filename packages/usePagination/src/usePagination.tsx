@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export type PaginationProps = {
     total: number;
@@ -7,11 +7,16 @@ export type PaginationProps = {
     onMax?: (current: number) => void;
     onMin?: (current: number) => void;
 }
-const usePagination = (props: PaginationProps): [number, () => void, () => void] => {
+const usePagination = (props: PaginationProps): [number, () => void, () => void, () => void] => {
     const {pageNum, pageSize, total, onMax, onMin} = Object.assign({pageNum: 1, pageSize: 20}, props);
     const [current, setCurrent] = useState(pageNum);
+
+    useEffect(() => {
+        setCurrent(pageNum);
+    }, [total, pageNum]);
+
     const next = () => {
-        if (current * (pageSize + 1) < total) {
+        if ((current + 1) * pageSize <= total) {
             setCurrent(current + 1);
         } else {
             onMax && onMax(current);
@@ -25,8 +30,12 @@ const usePagination = (props: PaginationProps): [number, () => void, () => void]
             onMin && onMin(current);
         }
     }
-    return [current, next, last];
-}
 
+    const reset = () => {
+        setCurrent(pageNum);
+    }
+
+    return [current, next, last, reset];
+}
 
 export default usePagination;
