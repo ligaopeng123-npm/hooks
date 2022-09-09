@@ -16,7 +16,8 @@ const usePagination = (props: PaginationProps): [number, () => void, () => void,
     }, [total, pageNum]);
 
     const next = () => {
-        if ((current + 1) * pageSize <= total) {
+        // 条数足够 进入下一条
+        if (current * pageSize < total) {
             setCurrent(current + 1);
         } else {
             onMax && onMax(current);
