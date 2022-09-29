@@ -18,6 +18,7 @@ import TestUseThrottle from "./components/TestUseThrottle";
 import TestUseZoom from "./components/TestUseZoom";
 import TestUsePagination from "./components/TestUsePagination";
 import TestUseVisibility from "./components/TestUseVisibility";
+import TestUseBoolean from "./components/TestUseBoolean";
 
 const App = () => {
     return (
@@ -36,6 +37,7 @@ const App = () => {
                     <Link to="/useThrottle">useThrottle</Link>
                     <Link to="/usePagination">usePagination</Link>
                     <Link to="/useVisibility">useVisibility</Link>
+                    <Link to="/useBoolean">useBoolean</Link>
                 </div>
                 <Switch>
                     <Route path="/useClock">
@@ -73,6 +75,9 @@ const App = () => {
                     </Route>
                     <Route path="/useVisibility">
                         <TestUseVisibility/>
+                    </Route>
+                    <Route path="/useBoolean">
+                        <TestUseBoolean/>
                     </Route>
                 </Switch>
             </Router>

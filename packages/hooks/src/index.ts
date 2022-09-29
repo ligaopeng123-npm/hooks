@@ -33,3 +33,5 @@ export { usePagination } from "@gaopeng123/hooks.use-pagination";
 export type { PaginationProps } from "@gaopeng123/hooks.use-pagination";
 export { useVisibility } from "@gaopeng123/hooks.use-visibility";
 export type { VisibilityProps } from "@gaopeng123/hooks.use-visibility";
+export { useBoolean } from "@gaopeng123/hooks.use-boolean";
+export type { BooleanBack } from "@gaopeng123/hooks.use-boolean";

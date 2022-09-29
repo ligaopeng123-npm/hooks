@@ -1,7 +1,10 @@
 {
-    "name": "@gaopeng123/hooks",
-    "version": "0.4.2",
-    "description": "hooks",
+    "name": "@gaopeng123/hooks.use-boolean",
+    "version": "0.4.3",
+    "description": "boolean类型设置",
+    "keywords": [
+        "boolean"
+    ],
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
     "license": "MIT",
@@ -26,6 +29,7 @@
         "url": "git+https://github.com/ligaopeng123-npm/hooks.git"
     },
     "scripts": {
+        "dev": "set NODE_ENV=development&&webpack serve",
         "start": "tsdx watch",
         "build": "tsdx build",
         "test": "tsdx test --passWithNoTests",
@@ -56,22 +60,5 @@
         "webpack": "^5.51.1",
         "webpack-cli": "^4.8.0",
         "webpack-dev-server": "^4.0.0"
-    },
-    "dependencies": {
-        "@gaopeng123/hooks.use-boolean": "^0.4.3",
-        "@gaopeng123/hooks.use-clock": "^0.4.2",
-        "@gaopeng123/hooks.use-debounce": "^0.4.2",
-        "@gaopeng123/hooks.use-easing": "^0.4.2",
-        "@gaopeng123/hooks.use-fetch": "^0.4.2",
-        "@gaopeng123/hooks.use-merge-value": "^0.4.2",
-        "@gaopeng123/hooks.use-pagination": "^0.4.2",
-        "@gaopeng123/hooks.use-poller": "^0.4.2",
-        "@gaopeng123/hooks.use-resize": "^0.4.2",
-        "@gaopeng123/hooks.use-scale": "^0.4.2",
-        "@gaopeng123/hooks.use-throttle": "^0.4.2",
-        "@gaopeng123/hooks.use-visibility": "^0.4.2",
-        "@gaopeng123/hooks.use-worker": "^0.4.2",
-        "@gaopeng123/hooks.use-zoom": "^0.4.2"
-    },
-    "gitHead": "dd71ac7dbb23a1c1d5e562fe405175af705dfe33"
+    }
 }
