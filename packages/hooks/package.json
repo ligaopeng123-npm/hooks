@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks",
-    "version": "0.4.2",
+    "version": "0.4.4",
     "description": "hooks",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -58,7 +58,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-boolean": "^0.4.3",
+        "@gaopeng123/hooks.use-boolean": "^0.4.4",
         "@gaopeng123/hooks.use-clock": "^0.4.2",
         "@gaopeng123/hooks.use-debounce": "^0.4.2",
         "@gaopeng123/hooks.use-easing": "^0.4.2",
