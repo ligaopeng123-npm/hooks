@@ -20,10 +20,10 @@
     "scripts": {
         "dev": "set NODE_ENV=development&&webpack serve",
         "docs": "set NODE_ENV=production&&webpack build",
-        "build": "lerna exec --ignore=@gaopeng123/hooks -- npm run build",
-        "test": "lerna exec --ignore=@gaopeng123/hooks -- npm run test",
+        "build": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run build",
+        "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
         "push": "lerna publish",
-        "pushAll": "lerna exec -- npm run push",
+        "pushAll": "lerna exec -- pnpm run push",
         "lint": "tsdx lint",
         "prepare": "tsdx build",
         "size": "size-limit",
@@ -80,5 +80,10 @@
         "webpack": "^5.51.1",
         "webpack-cli": "^4.8.0",
         "webpack-dev-server": "^4.0.0"
+    },
+    "pnpm": {
+        "overrides": {
+            "language-tags": "1.0.5"
+        }
     }
 }
