@@ -16,15 +16,21 @@
 
     .card {
         display: flex;
-        flex-flow: wrap;
-        overflow: hidden;
     }
 
-    .card > div {
+    .link {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: 100vh;
     }
 
     .card a {
-        margin: 16px;
+        margin: 8px;
+    }
+
+    .card-body {
+        padding: 16px;
     }
 
     #root {

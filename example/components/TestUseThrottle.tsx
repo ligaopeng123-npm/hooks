@@ -10,7 +10,7 @@
  *
  **********************************************************************/
 import React, {useState, useEffect} from 'react';
-import {useThrottle} from "@gaopeng123/hooks.use-throttle";
+import { useThrottle } from "../../packages/useThrottle";
 
 type TestUseThrottleProps = {};
 const TestUseThrottle: React.FC<TestUseThrottleProps> = (props) => {

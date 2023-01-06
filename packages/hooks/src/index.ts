@@ -28,6 +28,7 @@ export type { UseWorkerProps } from "@gaopeng123/hooks.use-worker";
 export { useDebounce } from "@gaopeng123/hooks.use-debounce";
 export type { DebounceOptions } from "@gaopeng123/hooks.use-debounce";
 export { useThrottle } from "@gaopeng123/hooks.use-throttle";
+export { useThrottleAndMerge } from "@gaopeng123/hooks.use-throttle-and-merge";
 export type { ThrottleOptions } from "@gaopeng123/hooks.use-throttle";
 export { usePagination } from "@gaopeng123/hooks.use-pagination";
 export type { PaginationProps } from "@gaopeng123/hooks.use-pagination";
@@ -35,3 +36,5 @@ export { useVisibility } from "@gaopeng123/hooks.use-visibility";
 export type { VisibilityProps } from "@gaopeng123/hooks.use-visibility";
 export { useBoolean } from "@gaopeng123/hooks.use-boolean";
 export type { BooleanBack } from "@gaopeng123/hooks.use-boolean";
+export { useReloadAfterStationary } from "@gaopeng123/hooks.use-reload-after-stationary";
+export type { OperateConfig } from "@gaopeng123/hooks.use-reload-after-stationary"

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  * 如果未production webpack会编译文档docs
  * @type {string}
  */
-const NODE_ENV = process.env.NODE_ENV.trimEnd();
+const NODE_ENV = process.env.NODE_ENV?.trimEnd();
 
 module.exports = {
 	mode: NODE_ENV === 'production' ? 'production' : 'development',// 环境管理
@@ -73,7 +73,7 @@ module.exports = {
 	output: {
 		filename: 'index.js',
 		libraryTarget: 'module', //module es6模式 umd模式
-		path: path.resolve(__dirname, NODE_ENV === 'production' ? 'docs' : 'example')
+		path: path.resolve(__dirname, NODE_ENV === 'production' ? './docs' : './example')
 		// clean: true, // 清理冗余文件
 	},
 	target: 'web',

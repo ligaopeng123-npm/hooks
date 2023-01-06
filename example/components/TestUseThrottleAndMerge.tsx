@@ -1,10 +1,16 @@
-# `useThrottleAndMerge`
-
-> TODO: 节流并且数据合并 第一次和最后一次都会触发，返回值为数组，将每一次节流数据合并到数组中去
-
-## Usage
-
-```tsx
+/**********************************************************************
+ *
+ * @模块名称: TestUseThrottleAndMerge
+ *
+ * @模块作用: TestUseThrottleAndMerge
+ *
+ * @创建人: gaopeng123
+ *
+ * @date: 2023/1/6 4:50 下午
+ *
+ * @版权所有: gaopeng123
+ *
+ **********************************************************************/
 import React, { useState } from 'react';
 import { useThrottleAndMerge } from "../../packages/useThrottleAndMerge";
 
@@ -24,4 +30,3 @@ const TestUseThrottleAndMerge: React.FC<TestUseThrottleAndMergeProps> = (props) 
 }
 
 export default TestUseThrottleAndMerge;
-```

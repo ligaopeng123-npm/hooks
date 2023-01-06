@@ -66,9 +66,11 @@
         "@gaopeng123/hooks.use-merge-value": "^0.5.0",
         "@gaopeng123/hooks.use-pagination": "^0.5.0",
         "@gaopeng123/hooks.use-poller": "^0.5.0",
+        "@gaopeng123/hooks.use-reload-after-stationary": "workspace:^0.5.0",
         "@gaopeng123/hooks.use-resize": "^0.5.0",
         "@gaopeng123/hooks.use-scale": "^0.5.0",
         "@gaopeng123/hooks.use-throttle": "^0.5.0",
+        "@gaopeng123/hooks.use-throttle-and-merge": "workspace:^0.5.0",
         "@gaopeng123/hooks.use-visibility": "^0.5.0",
         "@gaopeng123/hooks.use-worker": "^0.5.0",
         "@gaopeng123/hooks.use-zoom": "^0.5.0"

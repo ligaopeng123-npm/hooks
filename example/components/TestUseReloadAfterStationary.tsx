@@ -1,10 +1,16 @@
-# `useReloadAfterStationary`
-
-> TODO: 长时间未操作 reload当前页面
-
-## Usage
-
-```tsx
+/**********************************************************************
+ *
+ * @模块名称: TestUseReloadAfterStationary
+ *
+ * @模块作用: TestUseReloadAfterStationary
+ *
+ * @创建人: gaopeng123
+ *
+ * @date: 2023/1/6 4:46 下午
+ *
+ * @版权所有: gaopeng123
+ *
+ **********************************************************************/
 import React from 'react';
 import { useReloadAfterStationary } from "../../packages/useReloadAfterStationary";
 
@@ -19,4 +25,3 @@ const TestUseReloadAfterStationary: React.FC<TestUseReloadAfterStationaryProps> 
 }
 
 export default TestUseReloadAfterStationary;
-```

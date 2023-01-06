@@ -12,6 +12,7 @@ importers:
       '@types/react-dom': ^17.0.9
       '@types/react-router-dom': ^5.3.2
       babel-loader: ^8.2.3
+      dotenv-cli: ^6.0.0
       html-webpack-plugin: ^5.3.2
       husky: ^7.0.1
       lerna: ^4.0.0
@@ -32,6 +33,7 @@ importers:
       '@types/react-dom': 17.0.18
       '@types/react-router-dom': 5.3.3
       babel-loader: 8.3.0_webpack@5.75.0
+      dotenv-cli: 6.0.0
       html-webpack-plugin: 5.5.0_webpack@5.75.0
       husky: 7.0.4
       lerna: 4.0.0
@@ -57,9 +59,11 @@ importers:
       '@gaopeng123/hooks.use-merge-value': ^0.5.0
       '@gaopeng123/hooks.use-pagination': ^0.5.0
       '@gaopeng123/hooks.use-poller': ^0.5.0
+      '@gaopeng123/hooks.use-reload-after-stationary': workspace:^0.5.0
       '@gaopeng123/hooks.use-resize': ^0.5.0
       '@gaopeng123/hooks.use-scale': ^0.5.0
       '@gaopeng123/hooks.use-throttle': ^0.5.0
+      '@gaopeng123/hooks.use-throttle-and-merge': workspace:^0.5.0
       '@gaopeng123/hooks.use-visibility': ^0.5.0
       '@gaopeng123/hooks.use-worker': ^0.5.0
       '@gaopeng123/hooks.use-zoom': ^0.5.0
@@ -89,9 +93,11 @@ importers:
       '@gaopeng123/hooks.use-merge-value': link:../useMergeValue
       '@gaopeng123/hooks.use-pagination': link:../usePagination
       '@gaopeng123/hooks.use-poller': link:../usePoller
+      '@gaopeng123/hooks.use-reload-after-stationary': link:../useReloadAfterStationary
       '@gaopeng123/hooks.use-resize': link:../useResize
       '@gaopeng123/hooks.use-scale': link:../useScale
       '@gaopeng123/hooks.use-throttle': link:../useThrottle
+      '@gaopeng123/hooks.use-throttle-and-merge': link:../useThrottleAndMerge
       '@gaopeng123/hooks.use-visibility': link:../useVisibility
       '@gaopeng123/hooks.use-worker': link:../useWorker
       '@gaopeng123/hooks.use-zoom': link:../useZoom
@@ -6061,6 +6067,26 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       is-obj: 2.0.0
+    dev: true
+
+  /dotenv-cli/6.0.0:
+    resolution: {integrity: sha512-qXlCOi3UMDhCWFKe0yq5sg3X+pJAz+RQDiFN38AMSbUrnY3uZshSfDJUAge951OS7J9gwLZGfsBlWRSOYz/TRg==}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
+      dotenv: 16.0.3
+      dotenv-expand: 8.0.3
+      minimist: 1.2.7
+    dev: true
+
+  /dotenv-expand/8.0.3:
+    resolution: {integrity: sha512-SErOMvge0ZUyWd5B0NXMQlDkN+8r+HhVUsxgOO7IoPDOdDRD2JjExpN6y3KnFR66jsJMwSn1pqIivhU5rcJiNg==}
+    engines: {node: '>=12'}
+    dev: true
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: true
 
   /duplexer/0.1.2:

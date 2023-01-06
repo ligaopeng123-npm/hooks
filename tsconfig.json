@@ -33,7 +33,7 @@
                 "./packages/useScale/src"
             ]
         },
-        "outDir": "/dist",
+        "outDir": "./dist",
         "importHelpers": true,
         "declaration": true,
         "sourceMap": true,

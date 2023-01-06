@@ -19,67 +19,82 @@ import TestUseZoom from "./components/TestUseZoom";
 import TestUsePagination from "./components/TestUsePagination";
 import TestUseVisibility from "./components/TestUseVisibility";
 import TestUseBoolean from "./components/TestUseBoolean";
+import TestUseReloadAfterStationary from "./components/TestUseReloadAfterStationary";
+import TestUseThrottleAndMerge from "./components/TestUseThrottleAndMerge";
+
 
 const App = () => {
     return (
         <React.Fragment>
             <Router basename={`/`}>
                 <div className={`card`}>
-                    <Link to="/useClock">useClock</Link>
-                    <Link to="/usePoller">usePoller</Link>
-                    <Link to="/useEasing">useEasing</Link>
-                    <Link to="/useResize">useResize</Link>
-                    <Link to="/useScale">useScale</Link>
-                    <Link to="/useZoom">useZoom</Link>
-                    <Link to="/useFetch">useFetch</Link>
-                    <Link to="/useWorker">useWorker</Link>
-                    <Link to="/useDebounce">useDebounce</Link>
-                    <Link to="/useThrottle">useThrottle</Link>
-                    <Link to="/usePagination">usePagination</Link>
-                    <Link to="/useVisibility">useVisibility</Link>
-                    <Link to="/useBoolean">useBoolean</Link>
+                    <div className={`link`}>
+                        <Link to="/useClock">useClock</Link>
+                        <Link to="/usePoller">usePoller</Link>
+                        <Link to="/useEasing">useEasing</Link>
+                        <Link to="/useResize">useResize</Link>
+                        <Link to="/useScale">useScale</Link>
+                        <Link to="/useZoom">useZoom</Link>
+                        <Link to="/useFetch">useFetch</Link>
+                        <Link to="/useWorker">useWorker</Link>
+                        <Link to="/useDebounce">useDebounce</Link>
+                        <Link to="/useThrottle">useThrottle</Link>
+                        <Link to="/useThrottleAndMerge">useThrottleAndMerge</Link>
+                        <Link to="/usePagination">usePagination</Link>
+                        <Link to="/useVisibility">useVisibility</Link>
+                        <Link to="/useBoolean">useBoolean</Link>
+                        <Link to="/useReloadAfterStationary">useReloadAfterStationary</Link>
+                    </div>
+                    <div className={'card-body'}>
+                        <Switch>
+                            <Route path="/useClock">
+                                <TestUseClock/>
+                            </Route>
+                            <Route path="/usePoller">
+                                <TestUsePoller/>
+                            </Route>
+                            <Route path="/useEasing">
+                                <TestUseEasing/>
+                            </Route>
+                            <Route path="/useResize">
+                                <TestUseResize/>
+                            </Route>
+                            <Route path="/useZoom">
+                                <TestUseZoom/>
+                            </Route>
+                            <Route path="/useScale">
+                                <TestUseScale/>
+                            </Route>
+                            <Route path="/useFetch">
+                                <TestUseFetch/>
+                            </Route>
+                            <Route path="/useWorker">
+                                <TestUseWorker/>
+                            </Route>
+                            <Route path="/useDebounce">
+                                <TestUseDebounce/>
+                            </Route>
+                            <Route path="/useThrottle">
+                                <TestUseThrottle/>
+                            </Route>
+                            <Route path="/usePagination">
+                                <TestUsePagination/>
+                            </Route>
+                            <Route path="/useVisibility">
+                                <TestUseVisibility/>
+                            </Route>
+                            <Route path="/useBoolean">
+                                <TestUseBoolean/>
+                            </Route>
+                            <Route path="/useReloadAfterStationary">
+                                <TestUseReloadAfterStationary/>
+                            </Route>
+                            <Route path="/useThrottleAndMerge">
+                                <TestUseThrottleAndMerge/>
+                            </Route>
+                        </Switch>
+                    </div>
                 </div>
-                <Switch>
-                    <Route path="/useClock">
-                        <TestUseClock/>
-                    </Route>
-                    <Route path="/usePoller">
-                        <TestUsePoller/>
-                    </Route>
-                    <Route path="/useEasing">
-                        <TestUseEasing/>
-                    </Route>
-                    <Route path="/useResize">
-                        <TestUseResize/>
-                    </Route>
-                    <Route path="/useZoom">
-                        <TestUseZoom/>
-                    </Route>
-                    <Route path="/useScale">
-                        <TestUseScale/>
-                    </Route>
-                    <Route path="/useFetch">
-                        <TestUseFetch/>
-                    </Route>
-                    <Route path="/useWorker">
-                        <TestUseWorker/>
-                    </Route>
-                    <Route path="/useDebounce">
-                        <TestUseDebounce/>
-                    </Route>
-                    <Route path="/useThrottle">
-                        <TestUseThrottle/>
-                    </Route>
-                    <Route path="/usePagination">
-                        <TestUsePagination/>
-                    </Route>
-                    <Route path="/useVisibility">
-                        <TestUseVisibility/>
-                    </Route>
-                    <Route path="/useBoolean">
-                        <TestUseBoolean/>
-                    </Route>
-                </Switch>
             </Router>
         </React.Fragment>
     );
