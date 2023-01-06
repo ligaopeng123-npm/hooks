@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "description": "hooks",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -58,22 +58,22 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-boolean": "^0.5.0",
-        "@gaopeng123/hooks.use-clock": "^0.5.0",
-        "@gaopeng123/hooks.use-debounce": "^0.5.0",
-        "@gaopeng123/hooks.use-easing": "^0.5.0",
-        "@gaopeng123/hooks.use-fetch": "^0.5.0",
-        "@gaopeng123/hooks.use-merge-value": "^0.5.0",
-        "@gaopeng123/hooks.use-pagination": "^0.5.0",
-        "@gaopeng123/hooks.use-poller": "^0.5.0",
-        "@gaopeng123/hooks.use-reload-after-stationary": "workspace:^0.5.0",
-        "@gaopeng123/hooks.use-resize": "^0.5.0",
-        "@gaopeng123/hooks.use-scale": "^0.5.0",
-        "@gaopeng123/hooks.use-throttle": "^0.5.0",
-        "@gaopeng123/hooks.use-throttle-and-merge": "workspace:^0.5.0",
-        "@gaopeng123/hooks.use-visibility": "^0.5.0",
-        "@gaopeng123/hooks.use-worker": "^0.5.0",
-        "@gaopeng123/hooks.use-zoom": "^0.5.0"
+        "@gaopeng123/hooks.use-boolean": "^0.5.1",
+        "@gaopeng123/hooks.use-clock": "^0.5.1",
+        "@gaopeng123/hooks.use-debounce": "^0.5.1",
+        "@gaopeng123/hooks.use-easing": "^0.5.1",
+        "@gaopeng123/hooks.use-fetch": "^0.5.1",
+        "@gaopeng123/hooks.use-merge-value": "^0.5.1",
+        "@gaopeng123/hooks.use-pagination": "^0.5.1",
+        "@gaopeng123/hooks.use-poller": "^0.5.1",
+        "@gaopeng123/hooks.use-reload-after-stationary": "workspace:^0.5.1",
+        "@gaopeng123/hooks.use-resize": "^0.5.1",
+        "@gaopeng123/hooks.use-scale": "^0.5.1",
+        "@gaopeng123/hooks.use-throttle": "^0.5.1",
+        "@gaopeng123/hooks.use-throttle-and-merge": "workspace:^0.5.1",
+        "@gaopeng123/hooks.use-visibility": "^0.5.1",
+        "@gaopeng123/hooks.use-worker": "^0.5.1",
+        "@gaopeng123/hooks.use-zoom": "^0.5.1"
     },
     "gitHead": "dd71ac7dbb23a1c1d5e562fe405175af705dfe33"
 }
