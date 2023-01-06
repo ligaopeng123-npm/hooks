@@ -55,7 +55,7 @@
 		"webpack-dev-server": "^4.0.0"
 	},
 	"dependencies": {
-		"@gaopeng123/utils.function": "^0.4.13"
+		"@gaopeng123/utils.function": "^1.0.0"
 	},
 	"gitHead": "dd71ac7dbb23a1c1d5e562fe405175af705dfe33"
 }
