@@ -62,6 +62,6 @@
     "url": "https://github.com/ligaopeng123-npm/hooks/issues"
   },
   "dependencies": {
-    "@gaopeng123/utils.function": "^1.0.0"
+    "@gaopeng123/utils.function": "^1.0.5"
   }
 }

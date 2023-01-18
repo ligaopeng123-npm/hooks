@@ -1,40 +1,16 @@
-# `Throttle And Merge`
-
-> TODO: 节流并且数据合并 第一次和最后一次都会触发，返回值为数组，将每一次节流数据合并到数组中去
-
-## useThrottleAndMerge
-
-`TODO: 单次事件源合并`
-
-## Usage
-
-```tsx
-import React, { useState } from 'react';
-import { useThrottleAndMerge } from "../../packages/useThrottleAndMerge";
-
-type TestUseThrottleAndMergeProps = {};
-const TestUseThrottleAndMerge: React.FC<TestUseThrottleAndMergeProps> = (props) => {
-    const [event, setEvent] = useState([]);
-    const onClick = useThrottleAndMerge((res)=> {
-        console.log(res);
-        setEvent(res);
-    }, 1000);
-    return (
-        <React.Fragment>
-            <button onClick={onClick}>点击查看打印</button>
-            <div>click事件长度：{event.length}</div>
-        </React.Fragment>
-    )
-}
-
-export default TestUseThrottleAndMerge;
-```
-
-## useThrottleAndMergeFns
-
-`合并多个事件源`
-
-```tsx
+/**********************************************************************
+ *
+ * @模块名称: TestUseThrottleAndMergeFns
+ *
+ * @模块作用: TestUseThrottleAndMergeFns
+ *
+ * @创建人: gaopeng123
+ *
+ * @date: 2023/1/18 4:50 下午
+ *
+ * @版权所有: gaopeng123
+ *
+ **********************************************************************/
 import React, { useEffect, useRef, useState } from 'react';
 import { useThrottleAndMergeFns } from "../../packages/useThrottleAndMerge/src";
 
@@ -42,8 +18,8 @@ type TestUseThrottleAndMergeFnsProps = {};
 const TestUseThrottleAndMergeFns: React.FC<TestUseThrottleAndMergeFnsProps> = (props) => {
     const ref = useRef({a: 0, b: 0});
     const [events, setEvents] = useState<any>(ref.current);
-		// 事件源基于key来区分；
-  	// 例如：a函数接受事件a，b函数接受事件b
+    // 事件源基于key来区分；
+    // 例如：a函数接受事件a，b函数接受事件b
     const {a: onClick1, b: onClick2} = useThrottleAndMergeFns({a: (res: any)=> {
             ref.current.a = ref.current.a + res.length;
             setEvents(Object.assign({}, ref.current));
@@ -83,5 +59,3 @@ const TestUseThrottleAndMergeFns: React.FC<TestUseThrottleAndMergeFnsProps> = (p
 }
 
 export default TestUseThrottleAndMergeFns;
-```
-

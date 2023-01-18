@@ -21,6 +21,7 @@ import TestUseVisibility from "./components/TestUseVisibility";
 import TestUseBoolean from "./components/TestUseBoolean";
 import TestUseReloadAfterStationary from "./components/TestUseReloadAfterStationary";
 import TestUseThrottleAndMerge from "./components/TestUseThrottleAndMerge";
+import TestUseThrottleAndMergeFns from "./components/TestUseThrottleAndMergeFns";
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
                         <Link to="/useDebounce">useDebounce</Link>
                         <Link to="/useThrottle">useThrottle</Link>
                         <Link to="/useThrottleAndMerge">useThrottleAndMerge</Link>
+                        <Link to="/useThrottleAndMergeFns">useThrottleAndMergeFns</Link>
                         <Link to="/usePagination">usePagination</Link>
                         <Link to="/useVisibility">useVisibility</Link>
                         <Link to="/useBoolean">useBoolean</Link>
@@ -91,6 +93,9 @@ const App = () => {
                             </Route>
                             <Route path="/useThrottleAndMerge">
                                 <TestUseThrottleAndMerge/>
+                            </Route>
+                            <Route path="/useThrottleAndMergeFns">
+                                <TestUseThrottleAndMergeFns/>
                             </Route>
                         </Switch>
                     </div>

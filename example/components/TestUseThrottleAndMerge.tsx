@@ -11,21 +11,24 @@
  * @版权所有: gaopeng123
  *
  **********************************************************************/
-import React, { useState } from 'react';
-import { useThrottleAndMerge } from "../../packages/useThrottleAndMerge";
+import React, { useEffect, useRef, useState } from 'react';
+import { useThrottleAndMerge, useThrottleAndMergeFns } from "../../packages/useThrottleAndMerge/src";
 
 type TestUseThrottleAndMergeProps = {};
 const TestUseThrottleAndMerge: React.FC<TestUseThrottleAndMergeProps> = (props) => {
-    const [event, setEvent] = useState([]);
+    const [event, setEvent] = useState<any>([]);
     const onClick = useThrottleAndMerge((res)=> {
-        console.log(res);
-        setEvent(res);
-    }, 1000);
+        setEvent((c: any)=> {
+            return [...res, ...c];
+        })
+    }, 200);
+
     return (
-        <React.Fragment>
-            <button onClick={onClick}>点击查看打印</button>
-            <div>click事件长度：{event.length}</div>
-        </React.Fragment>
+        <>
+            useThrottleAndMerge <br/>
+            <button id={'TestUseThrottleAndMerge-test0'} onClick={onClick}>点击查看打印</button>
+            <div>click当前事件长度：{event.length}</div><br/>
+        </>
     )
 }
 

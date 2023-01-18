@@ -572,7 +572,7 @@ importers:
 
   packages/useThrottle:
     specifiers:
-      '@gaopeng123/utils.function': ^1.0.0
+      '@gaopeng123/utils.function': ^1.0.5
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
@@ -591,7 +591,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.0.0
+      '@gaopeng123/utils.function': 1.0.5
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -613,7 +613,7 @@ importers:
 
   packages/useThrottleAndMerge:
     specifiers:
-      '@gaopeng123/utils.function': ^1.0.0
+      '@gaopeng123/utils.function': ^1.0.5
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
@@ -632,7 +632,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.0.0
+      '@gaopeng123/utils.function': 1.0.5
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -2026,6 +2026,13 @@ packages:
 
   /@gaopeng123/utils.function/1.0.0:
     resolution: {integrity: sha512-0IUnujImCRwqk/mZNT8LnAuwRiAE2X+ASookjK2KF1GLrtcDh/rtEn0DKswO3SLTZWODINjM8YkWPBIpWlKo9w==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@gaopeng123/utils.types': 1.0.0
+    dev: false
+
+  /@gaopeng123/utils.function/1.0.5:
+    resolution: {integrity: sha512-8tH3i25yt3UfSeREk9DIH4ug8YNpjPxS/H5IG+msEZxjq44EhJA+eMhNrTuVtUtd9xA2Qtbi4gEahHoyiKMiaA==}
     engines: {node: '>=10'}
     dependencies:
       '@gaopeng123/utils.types': 1.0.0
