@@ -41,7 +41,7 @@ const useFetch = (url: string, options: Options & { trigger?: triggerEnum, metho
     const [loading, setLoading] = useState<boolean>(true);
     const [loaded, setLoaded] = useState<boolean>(false);
     const [runId, setRunId] = useState<number>();
-    const [optionsDynamic, setOptionsDynamic] = useState(options.params || options.body);
+    const [optionsDynamic, setOptionsDynamic] = useState(options);
 
     const send = () => {
         const abortController = options.abortController || new AbortController();
@@ -96,8 +96,8 @@ const useFetch = (url: string, options: Options & { trigger?: triggerEnum, metho
     }, [optionsDynamic]);
 
     useEffect(() => {
-        if (JSON.stringify(optionsDynamic) !== JSON.stringify(options.params || options.body)) {
-            setOptionsDynamic(options.params || options.body);
+        if (JSON.stringify(optionsDynamic) !== JSON.stringify(options)) {
+            setOptionsDynamic(options);
         }
     }, [options]);
 
