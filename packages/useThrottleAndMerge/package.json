@@ -1,6 +1,6 @@
 {
   "name": "@gaopeng123/hooks.use-throttle-and-merge",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "节流并且数据合并",
   "keywords": [
     "throttl",
