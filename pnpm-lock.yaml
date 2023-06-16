@@ -61,7 +61,7 @@ importers:
       '@gaopeng123/hooks.use-clock': ^0.6.0
       '@gaopeng123/hooks.use-debounce': ^0.6.0
       '@gaopeng123/hooks.use-easing': ^0.6.0
-      '@gaopeng123/hooks.use-fetch': ^0.6.0
+      '@gaopeng123/hooks.use-fetch': ^0.6.1
       '@gaopeng123/hooks.use-merge-value': ^0.6.0
       '@gaopeng123/hooks.use-pagination': ^0.6.0
       '@gaopeng123/hooks.use-poller': ^0.6.0
