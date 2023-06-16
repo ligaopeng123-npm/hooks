@@ -1,5 +1,3 @@
-import { usePatchFetch } from "./useFetch";
-
 export {
     default as useFetch,
     useGet,
