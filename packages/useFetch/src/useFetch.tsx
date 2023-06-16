@@ -11,7 +11,8 @@
  **********************************************************************/
 import React, {
     useState,
-    useEffect
+    useEffect,
+    useRef
 } from 'react';
 import {
     createFetch,
@@ -147,7 +148,6 @@ export const useCtrlFetch = (url: string, options?: Options, checkResponse?: Che
     }, checkResponse, deps);
 }
 
-
 export const useCtrlGet = (url: string, options?: Options, checkResponse?: CheckResponse, deps?: Deps) => {
     return useCtrlFetch(url, Object.assign({
         method: MethodEnum.get,
@@ -215,4 +215,57 @@ export const useUpdatePatch = (url: string, options?: Options, checkResponse?: C
     return useUpdateFetch(url, Object.assign({
         method: MethodEnum.patch,
     }, options), checkResponse, deps);
+}
+
+/**
+ * 可中断fetch
+ * @param method
+ */
+export const useCreateFetch = (method?: MethodEnum) => {
+    const ctrRef = useRef<{ abortController?: AbortController }>({});
+    const abort = () => {
+        if (ctrRef.current.abortController) {
+            ctrRef.current.abortController?.abort();
+        }
+    }
+    const sent = (url: string, options?: Options) => {
+        // 中断请求
+        abort();
+        const abortController = new AbortController();
+        ctrRef.current.abortController = abortController;
+        return createFetch(url, Object.assign({
+            method: method || MethodEnum.get,
+            abortController: abortController
+        }, options));
+    }
+    useEffect(() => {
+        return () => {
+            abort();
+        }
+    }, []);
+
+    return [{
+        sent,
+        abort
+    }];
+}
+
+export const useGetFetch = () => {
+    return useCreateFetch(MethodEnum.get);
+}
+
+export const usePostFetch = () => {
+    return useCreateFetch(MethodEnum.post);
+}
+
+export const usePutFetch = () => {
+    return useCreateFetch(MethodEnum.put);
+}
+
+export const useDelFetch = () => {
+    return useCreateFetch(MethodEnum.del);
+}
+
+export const usePatchFetch = () => {
+    return useCreateFetch(MethodEnum.patch);
 }

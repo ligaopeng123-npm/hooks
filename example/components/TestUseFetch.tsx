@@ -21,6 +21,7 @@ import {
 } from "../../packages/useFetch";
 import {
     useCtrlGet,
+    useGetFetch,
     useUpdateGet
 } from "../../packages/useFetch/src";
 
@@ -47,6 +48,11 @@ const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
         return res.data;
     });
 
+    const [{
+        sent,
+        abort
+    }] = useGetFetch();
+
     if (loading) {
         return (
             <span>loading</span>)
@@ -60,6 +66,27 @@ const TestUseFetch: React.FC<TestUseFetchProps> = (props) => {
     return (
         <React.Fragment>
             <h3 onClick={onClick}>useGet</h3>
+            <div
+                style={{
+                    display: 'flex',
+                    width: 500
+                }}>
+                <div
+                    style={itemStyle}>loading: {loading}</div>
+                <div
+                    style={itemStyle}>error: {error}</div>
+                <div
+                    style={itemStyle}>data: {JSON.stringify(data, null, 2)}</div>
+            </div>
+            <h3 onClick={() => {
+                sent('/assets/test.json').then(res => {
+                    console.log(res);
+                });
+                setTimeout(() => {
+                    // abort();
+                }, 1)
+            }
+            }>useGetFetch</h3>
             <div
                 style={{
                     display: 'flex',

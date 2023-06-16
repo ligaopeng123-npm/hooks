@@ -1,3 +1,5 @@
+import { usePatchFetch } from "./useFetch";
+
 export {
     default as useFetch,
     useGet,
@@ -5,6 +7,13 @@ export {
     usePatch,
     usePut,
     useDel,
+
+    useCreateFetch,
+    useGetFetch,
+    usePostFetch,
+    usePutFetch,
+    useDelFetch,
+    usePatchFetch,
 
     useUpdateFetch,
     useUpdateGet,
@@ -19,6 +28,8 @@ export {
     useCtrlPatch,
     useCtrlPut,
     useCtrlDel,
-} from "./useFetch";
+}
+    from
+        "./useFetch";
 
 
