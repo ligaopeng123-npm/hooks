@@ -1,4 +1,33 @@
-## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.5.2...v0.1.7) (2023-03-16)
+## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.2...v0.1.7) (2023-07-19)
+
+
+
+## [0.6.2](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.1...v0.6.2) (2023-06-16)
+
+
+### Features
+
+* useCreateFetch系列hooks ([9de4a9c](https://github.com/ligaopeng123-npm/hooks/commit/9de4a9c3438ecd357d1d9a0718bc40ac3398b555))
+
+
+
+## [0.6.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.0...v0.6.1) (2023-06-16)
+
+
+### Features
+
+* useCreateFetch系列hooks ([398d72c](https://github.com/ligaopeng123-npm/hooks/commit/398d72cc7f56a3af9b2939fdb99ad5feb2e499eb))
+
+
+
+# [0.6.0](https://github.com/ligaopeng123-npm/hooks/compare/v0.5.2...v0.6.0) (2023-05-11)
+
+
+### Features
+
+* changelog ([99b5936](https://github.com/ligaopeng123-npm/hooks/commit/99b5936de5f533ad32c51ef6a424491a30a99b04))
+* useUpdateFetch useCtrlFetch 添加 ([d0f1d21](https://github.com/ligaopeng123-npm/hooks/commit/d0f1d21f6e0b24331701a4d750ee145050629f93))
+* useUpdateFetch useCtrlFetch 添加 基于options做比较 ([78593dd](https://github.com/ligaopeng123-npm/hooks/commit/78593ddece7f751a38e02ac74983816687d7c7d0))
 
 
 

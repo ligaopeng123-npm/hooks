@@ -24,6 +24,7 @@
         "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
         "push": "lerna publish",
         "pushAll": "lerna exec -- pnpm run push",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "lint": "tsdx lint",
         "prepare": "tsdx build",
         "size": "size-limit",
