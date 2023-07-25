@@ -1,4 +1,5 @@
 export {
+    initCreateFetch,
     default as useFetch,
     useGet,
     usePost,
@@ -26,8 +27,6 @@ export {
     useCtrlPatch,
     useCtrlPut,
     useCtrlDel,
-}
-    from
-        "./useFetch";
+} from "./useFetch";
 
 

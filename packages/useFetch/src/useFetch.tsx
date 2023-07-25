@@ -9,31 +9,24 @@
  * @date: 2022/2/17 13:29
  *
  **********************************************************************/
-import React, {
-    useState,
-    useEffect,
-    useRef
-} from 'react';
-import {
-    createFetch,
-    MethodEnum
-} from "@gaopeng123/fetch";
-import {
-    Method,
-    Options
-} from "@gaopeng123/fetch/dist/typing";
-import {
-    isArray,
-    isFunction
-} from "@gaopeng123/utils.types";
+import React, { useState, useEffect, useRef } from 'react';
+import { createFetch, MethodEnum } from "@gaopeng123/fetch";
+import { CreateFetch, Method, Options } from "@gaopeng123/fetch/dist/typing";
+import { isArray, isFunction } from "@gaopeng123/utils.types";
 
 export type CheckResponse = (props: any) => any;
-export type Deps = Array<any>
+export type Deps = Array<any>;
+
+let currentCreateFetch = createFetch;
 
 enum triggerEnum {
     ctrl = 'ctrl',
     update = 'update',
     auto = 'auto'
+}
+
+export const initCreateFetch = (createFetch: CreateFetch)=> {
+    currentCreateFetch = createFetch;
 }
 
 const useFetch = (url: string, options: Options & { trigger?: triggerEnum, method?: Method }, checkResponse?: CheckResponse, deps?: Deps) => {
@@ -46,7 +39,7 @@ const useFetch = (url: string, options: Options & { trigger?: triggerEnum, metho
 
     const send = () => {
         const abortController = options.abortController || new AbortController();
-        createFetch(url, Object.assign({
+        currentCreateFetch(url, Object.assign({
             method: MethodEnum.get,
             abortController: abortController
         }, options)).then((res: any) => {
@@ -74,17 +67,18 @@ const useFetch = (url: string, options: Options & { trigger?: triggerEnum, metho
 
                 }
             }
-        } else if (options.trigger === 'ctrl') {
-            if (runId) {
-                return send();
-            } else {
-                return () => {
+        } else
+            if (options.trigger === 'ctrl') {
+                if (runId) {
+                    return send();
+                } else {
+                    return () => {
 
+                    }
                 }
+            } else {
+                return send();
             }
-        } else {
-            return send();
-        }
     }
 
     useEffect(() => {
@@ -233,7 +227,7 @@ export const useCreateFetch = (method?: MethodEnum) => {
         abort();
         const abortController = new AbortController();
         ctrRef.current.abortController = abortController;
-        return createFetch(url, Object.assign({
+        return currentCreateFetch(url, Object.assign({
             method: method || MethodEnum.get,
             abortController: abortController
         }, options));
