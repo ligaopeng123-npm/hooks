@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-easing",
-    "version": "0.6.3",
+    "version": "0.7.0",
     "description": "缓动函数",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -58,7 +58,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-poller": "^0.6.3",
+        "@gaopeng123/hooks.use-poller": "^0.7.0",
         "@gaopeng123/utils.types": "^0.4.0"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
