@@ -66,15 +66,15 @@
         "@gaopeng123/hooks.use-merge-value": "^0.6.3",
         "@gaopeng123/hooks.use-pagination": "^0.6.3",
         "@gaopeng123/hooks.use-poller": "^0.6.3",
-        "@gaopeng123/hooks.use-reload-after-stationary": "workspace:^0.6.3",
+        "@gaopeng123/hooks.use-reload-after-stationary": "^0.6.0",
         "@gaopeng123/hooks.use-resize": "^0.6.3",
         "@gaopeng123/hooks.use-scale": "^0.6.3",
         "@gaopeng123/hooks.use-throttle": "^0.6.3",
-        "@gaopeng123/hooks.use-throttle-and-merge": "workspace:^0.6.3",
+        "@gaopeng123/hooks.use-throttle-and-merge": "^0.6.0",
         "@gaopeng123/hooks.use-visibility": "^0.6.3",
         "@gaopeng123/hooks.use-worker": "^0.6.3",
         "@gaopeng123/hooks.use-zoom": "^0.6.3",
-        "@gaopeng123/hooks.useAntdTableSelection": "workspace:^0.6.3"
+        "@gaopeng123/hooks.useAntdTableSelection": "^0.1.0"
     },
-    "gitHead": "dd71ac7dbb23a1c1d5e562fe405175af705dfe33"
+    "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }

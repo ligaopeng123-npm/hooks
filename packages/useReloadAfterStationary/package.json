@@ -63,5 +63,6 @@
   },
   "dependencies": {
     "@gaopeng123/utils.function": "^1.0.0"
-  }
+  },
+  "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }
