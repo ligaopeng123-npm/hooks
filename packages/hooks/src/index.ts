@@ -68,5 +68,5 @@ export type { BooleanBack } from "@gaopeng123/hooks.use-boolean";
 export { useReloadAfterStationary } from "@gaopeng123/hooks.use-reload-after-stationary";
 export type { OperateConfig } from "@gaopeng123/hooks.use-reload-after-stationary"
 
-export {useAntdTableSelection} from "@gaopeng123/hooks.useAntdTableSelection";
-export type {useAntdTableSelectionProps} from "@gaopeng123/hooks.useAntdTableSelection";
+export {useAntdTableSelection} from "@gaopeng123/hooks.use-antd-table-selection";
+export type {useAntdTableSelectionProps} from "@gaopeng123/hooks.use-antd-table-selection";
