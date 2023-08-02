@@ -1,8 +1,11 @@
 {
     "name": "@gaopeng123/hooks.useAntdTableSelection",
-    "version": "0.1.0",
+    "version": "0.6.3",
     "description": "antd table selection",
-    "keywords": ["antd", "table"],
+    "keywords": [
+        "antd",
+        "table"
+    ],
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
     "license": "MIT",
