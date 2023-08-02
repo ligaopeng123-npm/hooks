@@ -27,8 +27,6 @@ const useScale = (props?: ScaleProps) => {
         height,
     } = Object.assign({width: 1920, height: 1080}, props);
 
-    console.log(width, height,)
-
     const {availWidth, availHeight} = useResize();
 
     useEffect(() => {
