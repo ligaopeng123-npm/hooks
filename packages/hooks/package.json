@@ -73,7 +73,8 @@
         "@gaopeng123/hooks.use-throttle-and-merge": "workspace:^0.6.0",
         "@gaopeng123/hooks.use-visibility": "^0.6.0",
         "@gaopeng123/hooks.use-worker": "^0.6.0",
-        "@gaopeng123/hooks.use-zoom": "^0.6.0"
+        "@gaopeng123/hooks.use-zoom": "^0.6.0",
+        "@gaopeng123/hooks.useAntdTableSelection": "workspace:^0.1.0"
     },
     "gitHead": "dd71ac7dbb23a1c1d5e562fe405175af705dfe33"
 }
