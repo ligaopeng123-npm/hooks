@@ -57,23 +57,23 @@ importers:
 
   packages/hooks:
     specifiers:
-      '@gaopeng123/hooks.use-boolean': ^0.6.3
-      '@gaopeng123/hooks.use-clock': ^0.6.3
-      '@gaopeng123/hooks.use-debounce': ^0.6.3
-      '@gaopeng123/hooks.use-easing': ^0.6.3
-      '@gaopeng123/hooks.use-fetch': ^0.6.3
-      '@gaopeng123/hooks.use-merge-value': ^0.6.3
-      '@gaopeng123/hooks.use-pagination': ^0.6.3
-      '@gaopeng123/hooks.use-poller': ^0.6.3
-      '@gaopeng123/hooks.use-reload-after-stationary': workspace:^0.6.3
-      '@gaopeng123/hooks.use-resize': ^0.6.3
-      '@gaopeng123/hooks.use-scale': ^0.6.3
-      '@gaopeng123/hooks.use-throttle': ^0.6.3
-      '@gaopeng123/hooks.use-throttle-and-merge': workspace:^0.6.3
-      '@gaopeng123/hooks.use-visibility': ^0.6.3
-      '@gaopeng123/hooks.use-worker': ^0.6.3
-      '@gaopeng123/hooks.use-zoom': ^0.6.3
-      '@gaopeng123/hooks.useAntdTableSelection': workspace:^0.6.3
+      '@gaopeng123/hooks.use-antd-table-selection': workspace:^0.7.0
+      '@gaopeng123/hooks.use-boolean': ^0.7.0
+      '@gaopeng123/hooks.use-clock': ^0.7.0
+      '@gaopeng123/hooks.use-debounce': ^0.7.0
+      '@gaopeng123/hooks.use-easing': ^0.7.0
+      '@gaopeng123/hooks.use-fetch': ^0.7.0
+      '@gaopeng123/hooks.use-merge-value': ^0.7.0
+      '@gaopeng123/hooks.use-pagination': ^0.7.0
+      '@gaopeng123/hooks.use-poller': ^0.7.0
+      '@gaopeng123/hooks.use-reload-after-stationary': ^0.7.0
+      '@gaopeng123/hooks.use-resize': ^0.7.0
+      '@gaopeng123/hooks.use-scale': ^0.7.0
+      '@gaopeng123/hooks.use-throttle': ^0.7.0
+      '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.0
+      '@gaopeng123/hooks.use-visibility': ^0.7.0
+      '@gaopeng123/hooks.use-worker': ^0.7.0
+      '@gaopeng123/hooks.use-zoom': ^0.7.0
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
@@ -92,6 +92,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
+      '@gaopeng123/hooks.use-antd-table-selection': link:../useAntdTableSelection
       '@gaopeng123/hooks.use-boolean': link:../useBoolean
       '@gaopeng123/hooks.use-clock': link:../useClock
       '@gaopeng123/hooks.use-debounce': link:../useDebounce
@@ -108,7 +109,6 @@ importers:
       '@gaopeng123/hooks.use-visibility': link:../useVisibility
       '@gaopeng123/hooks.use-worker': link:../useWorker
       '@gaopeng123/hooks.use-zoom': link:../useZoom
-      '@gaopeng123/hooks.useAntdTableSelection': link:../useAntdTableSelection
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52

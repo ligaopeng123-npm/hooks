@@ -58,7 +58,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-antd-table-selection": "^0.1.0",
+        "@gaopeng123/hooks.use-antd-table-selection": "workspace:^0.7.0",
         "@gaopeng123/hooks.use-boolean": "^0.7.0",
         "@gaopeng123/hooks.use-clock": "^0.7.0",
         "@gaopeng123/hooks.use-debounce": "^0.7.0",
