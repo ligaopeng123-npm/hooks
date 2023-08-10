@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-visibility",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "description": "浏览器页面唤醒与隐藏",
     "keywords": [
         "visibility"
