@@ -1,4 +1,51 @@
-## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.2...v0.1.7) (2023-07-19)
+## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.1...v0.1.7) (2023-08-10)
+
+
+### Features
+
+* add useEffectOnceInStrictMode ([ab1d7b0](https://github.com/ligaopeng123-npm/hooks/commit/ab1d7b0afb1c2f7040b02b4e9f0f2dda4aca3875))
+
+
+
+## [0.7.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.3...v0.7.1) (2023-08-02)
+
+
+### Features
+
+* add @gaopeng123/hooks.use-antd-table-selection ([af9a433](https://github.com/ligaopeng123-npm/hooks/commit/af9a433d24eca29f98daa3797977dc811a3b7f51))
+* add @gaopeng123/hooks.use-antd-table-selection ([23208d4](https://github.com/ligaopeng123-npm/hooks/commit/23208d46cf44b6c23e3b4977df6b8d62b88f22a1))
+* add useAntdTableSelection ([56ffd34](https://github.com/ligaopeng123-npm/hooks/commit/56ffd3474e2d8efe5b41fc7e5b48068e5ee39daf))
+* push ([9d454b0](https://github.com/ligaopeng123-npm/hooks/commit/9d454b0fd40da17f0a465a2a2bc56e9331f1b07b))
+* push ([0f191dc](https://github.com/ligaopeng123-npm/hooks/commit/0f191dc43ad3566e76067243b247922dc09201b8))
+* push@gaopeng123/hooks.use-antd-table-selection ([153591c](https://github.com/ligaopeng123-npm/hooks/commit/153591c24160d13bb1a120ae85147b2ecf914f3c))
+
+
+
+## [0.6.3](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.3-alpha.1...v0.6.3) (2023-08-02)
+
+
+### Features
+
+* add useAntdTableSelection ([bef972d](https://github.com/ligaopeng123-npm/hooks/commit/bef972d8969ab51baf97b3d1dd631705510beaad))
+* 删除冗余打印 ([3be0cdb](https://github.com/ligaopeng123-npm/hooks/commit/3be0cdb5d76ef86b2589af42fe919924c1b06e9d))
+
+
+
+## [0.6.3-alpha.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.3-alpha.0...v0.6.3-alpha.1) (2023-07-25)
+
+
+### Features
+
+* initCreateFetch ([e150ce9](https://github.com/ligaopeng123-npm/hooks/commit/e150ce9a7173d9072cbd7dc21c2a1d14039d718c))
+
+
+
+## [0.6.3-alpha.0](https://github.com/ligaopeng123-npm/hooks/compare/v0.6.2...v0.6.3-alpha.0) (2023-07-25)
+
+
+### Features
+
+* initCreateFetch ([5d14325](https://github.com/ligaopeng123-npm/hooks/commit/5d143257d974c22d21c87d56b6352b3e4a70043b))
 
 
 
