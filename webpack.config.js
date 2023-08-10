@@ -78,9 +78,9 @@ module.exports = {
 	},
 	target: 'web',
 	devServer: {
-		static: {
-			directory: path.join(__dirname, NODE_ENV === 'production' ? 'docs' : 'example'),
-		},
+		// static: {
+		// 	directory: path.join(__dirname, NODE_ENV === 'production' ? 'docs' : 'example'),
+		// },
 		// contentBase: path.resolve(__dirname, 'example'),
 		// 压缩代码 先注释
 		compress: NODE_ENV == 'production',

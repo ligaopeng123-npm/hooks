@@ -63,6 +63,7 @@
         "@gaopeng123/hooks.use-clock": "^0.7.1",
         "@gaopeng123/hooks.use-debounce": "^0.7.1",
         "@gaopeng123/hooks.use-easing": "^0.7.1",
+        "@gaopeng123/hooks.use-effect-once-in-strict-mode": "workspace:^0.1.0",
         "@gaopeng123/hooks.use-fetch": "^0.7.1",
         "@gaopeng123/hooks.use-merge-value": "^0.7.1",
         "@gaopeng123/hooks.use-pagination": "^0.7.1",

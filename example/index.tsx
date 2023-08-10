@@ -22,11 +22,12 @@ import TestUseBoolean from "./components/TestUseBoolean";
 import TestUseReloadAfterStationary from "./components/TestUseReloadAfterStationary";
 import TestUseThrottleAndMerge from "./components/TestUseThrottleAndMerge";
 import TestUseThrottleAndMergeFns from "./components/TestUseThrottleAndMergeFns";
+import TestUseEffectOnceInStrictMode from "./components/TestUseEffectOnceInStrictMode";
 
 
 const App = () => {
     return (
-        <React.Fragment>
+        <React.StrictMode>
             <Router basename={`/`}>
                 <div className={`card`}>
                     <div className={`link`}>
@@ -46,6 +47,7 @@ const App = () => {
                         <Link to="/useVisibility">useVisibility</Link>
                         <Link to="/useBoolean">useBoolean</Link>
                         <Link to="/useReloadAfterStationary">useReloadAfterStationary</Link>
+                        <Link to="/useEffectOnceInStrictMode">useEffectOnceInStrictMode</Link>
                     </div>
                     <div className={'card-body'}>
                         <Switch>
@@ -97,11 +99,14 @@ const App = () => {
                             <Route path="/useThrottleAndMergeFns">
                                 <TestUseThrottleAndMergeFns/>
                             </Route>
+                            <Route path="/useEffectOnceInStrictMode">
+                                <TestUseEffectOnceInStrictMode/>
+                            </Route>
                         </Switch>
                     </div>
                 </div>
             </Router>
-        </React.Fragment>
+        </React.StrictMode>
     );
 };
 

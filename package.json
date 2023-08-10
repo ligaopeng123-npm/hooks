@@ -18,7 +18,7 @@
         "node": ">=10"
     },
     "scripts": {
-        "dev": "dotenv -v NODE_ENV=development webpack serve",
+        "dev": "dotenv -v NODE_ENV=development webpack serve --mode development",
         "docs": "dotenv -v NODE_ENV=production webpack build",
         "build": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run build",
         "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
