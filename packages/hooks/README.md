@@ -64,5 +64,9 @@ or yarn add @gaopeng123/hooks
 
 * [useBoolean](./src/useBoolean/README.md)：boolean类型管理器
 
+* [useAntdTableSelection](./src/useAntdTableSelection/README.md)：antd proTable处理选中
+
+* [useEffectOnceInStrictMode](./src/useEffectOnceInStrictMode/README.md)：react18 严格模式下只执行一次
+
   
 
