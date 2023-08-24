@@ -59,8 +59,8 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/fetch": "^0.2.4",
-        "@gaopeng123/utils.types": "^0.4.0"
+        "@gaopeng123/fetch": "latest",
+        "@gaopeng123/utils.types": "latest"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }
