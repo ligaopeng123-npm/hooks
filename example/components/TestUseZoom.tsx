@@ -22,7 +22,7 @@ const TestUseZoom: React.FC<TestUseZoomProps> = (props) => {
         }
     });
 
-    userZoomAndDrag({ zoomDom: ref })
+    const [z, { zoomReset }] = userZoomAndDrag({ zoomDom: ref })
     return (
         <div style={{ backgroundColor: '#97fa04', width: '100%', height: '100%' }}>
             <h3>useZoom</h3>
@@ -31,7 +31,9 @@ const TestUseZoom: React.FC<TestUseZoomProps> = (props) => {
             zoom: {
             zoom
         }
-            <div ref={ref} style={{ backgroundColor: '#c7541e', width: 300, height: 300 }}></div>
+            <div ref={ref} style={{ backgroundColor: '#c7541e', width: 300, height: 300 }}>
+                <a onClick={() => zoomReset()}>恢复</a><br/>
+            </div>
         </div>
     )
 };

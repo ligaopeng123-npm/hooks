@@ -24,11 +24,11 @@ import {useZoom} from "@gaopeng123/hooks.use-zoom";
 
 type TestUseZoomProps = {};
 const TestUseZoom: React.FC<TestUseZoomProps> = (props) => {
-    const [zoom, {zoomUp, zoomDown}] = useZoom({min: 0.25, max: 5, onMax: ()=> {
+    const [zoom, {zoomUp, zoomDown, zoomReset}] = useZoom({min: 0.25, max: 5, onMax: ()=> {
             console.log(111)
         }});
   
-  const [zoom, {zoomUp, zoomDown}] = useZoomAndDrag({min: 0.25, max: 5, onMax: ()=> {
+  const [zoom, {zoomUp, zoomDown, zoomReset}] = useZoomAndDrag({min: 0.25, max: 5, onMax: ()=> {
             console.log(111)
         }});
     return (

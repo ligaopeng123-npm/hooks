@@ -22,7 +22,13 @@ export interface ZoomProps {
     step?: number; // 每次缩放级别的值 默认0.25
 }
 
-const useZoom = (props?: ZoomProps): [number, { zoomUp: (step?: number) => void, zoomDown: (step?: number) => void }] => {
+export interface ZoomCallBack {
+    zoomUp: (step?: number) => void,
+    zoomDown: (step?: number) => void,
+    zoomReset: () => void,
+}
+
+const useZoom = (props?: ZoomProps): [number, ZoomCallBack] => {
     const { zoomDom, max, min, step, defaultZoom, onMin, onMax } = Object.assign({
         max: 2,
         min: 0.5,
@@ -35,6 +41,7 @@ const useZoom = (props?: ZoomProps): [number, { zoomUp: (step?: number) => void,
     const dataRef = useRef({ zoom: defaultZoom });
 
     const setZoomVal = (zoom: number) => {
+        dataRef.current.zoom = zoom;
         const currentZoomDom = getZoomDom(zoomDom);
         currentZoomDom.style.transform = setTransform(currentZoomDom, { type: 'scale', value: zoom });
     }
@@ -46,7 +53,6 @@ const useZoom = (props?: ZoomProps): [number, { zoomUp: (step?: number) => void,
         } else {
             const _newZoom = zoom + (_step || step);
             const newZoom = _newZoom > max ? max : _newZoom;
-            dataRef.current.zoom = newZoom;
             setZoom(newZoom);
             setZoomVal(newZoom);
         }
@@ -59,13 +65,16 @@ const useZoom = (props?: ZoomProps): [number, { zoomUp: (step?: number) => void,
         } else {
             const _newZoom = zoom - (_step || step);
             const newZoom = _newZoom < min ? min : _newZoom;
-            dataRef.current.zoom = newZoom;
             setZoom(newZoom);
             setZoomVal(newZoom);
         }
     }
 
-    return [zoom, { zoomUp, zoomDown }]
+    return [zoom, {
+        zoomUp, zoomDown, zoomReset: () => {
+            setZoomVal(defaultZoom);
+        }
+    }]
 };
 
 export default useZoom;
