@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks",
-    "version": "0.7.4",
+    "version": "0.7.5-alpha.0",
     "description": "hooks",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -75,7 +75,7 @@
         "@gaopeng123/hooks.use-throttle-and-merge": "^0.7.2",
         "@gaopeng123/hooks.use-visibility": "^0.7.2",
         "@gaopeng123/hooks.use-worker": "^0.7.2",
-        "@gaopeng123/hooks.use-zoom": "^0.7.2"
+        "@gaopeng123/hooks.use-zoom": "^0.7.5-alpha.0"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }

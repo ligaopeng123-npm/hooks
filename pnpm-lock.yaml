@@ -74,7 +74,7 @@ importers:
       '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.2
       '@gaopeng123/hooks.use-visibility': ^0.7.2
       '@gaopeng123/hooks.use-worker': ^0.7.2
-      '@gaopeng123/hooks.use-zoom': ^0.7.2
+      '@gaopeng123/hooks.use-zoom': ^0.7.5-alpha.0
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
@@ -2209,7 +2209,7 @@ packages:
     resolution: {integrity: sha512-bhaVvBCOh9zpifUD+XZuhq7r3va6CjXid4LIEP31aP1jpznziLPkdAjCmkBvrp5KZQSvQLAjfCn1l1I1ehNhBg==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.file': 1.1.11
+      '@gaopeng123/utils.file': 1.1.12-alpha.0
       '@gaopeng123/utils.types': 1.1.10
       node-fetch: 2.6.7
     transitivePeerDependencies:
@@ -2223,8 +2223,8 @@ packages:
       '@gaopeng123/utils.types': 0.4.14
     dev: false
 
-  /@gaopeng123/utils.file/1.1.11:
-    resolution: {integrity: sha512-olE4D/xpHLEDxSmhP7fthzxavHCMhuXPIgDwBqZ3yJ8QtDWcXYIDtqubjSRFy8VKY5D/leVk8YVdzqd1p4j2FA==}
+  /@gaopeng123/utils.file/1.1.12-alpha.0:
+    resolution: {integrity: sha512-k5ExojgY2U5AtHXptWayTTIgW+aLXvLD5lZA22LJWHpX5LVx7T7SDRwvXbm6vr5HD5hMIJYsM8ak7rofmYOO5A==}
     engines: {node: '>=10'}
     dependencies:
       '@gaopeng123/utils.object': 1.1.11
@@ -4468,7 +4468,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       webpack: 5.75.0_webpack-cli@4.10.0
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
     dev: true
 
   /@webpack-cli/info/1.5.0_webpack-cli@4.10.0:
@@ -4477,7 +4477,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       envinfo: 7.8.1
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
     dev: true
 
   /@webpack-cli/serve/1.7.0_ixpxa6msyrc3obwec7as2lygbu:
@@ -16613,7 +16613,7 @@ packages:
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       watchpack: 2.4.0
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - '@swc/core'
