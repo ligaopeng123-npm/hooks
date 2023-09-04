@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useZoom} from "./useZoom";
-export type {ZoomProps} from "./useZoom";
+export { default as useZoom, ZoomProps } from "./useZoom";
+export { default as useZoomAndDrag } from "./useZoom";

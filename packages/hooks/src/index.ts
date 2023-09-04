@@ -9,6 +9,8 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
+import { useZoomAndDrag } from "@gaopeng123/hooks.use-zoom";
+
 export { useClock } from "@gaopeng123/hooks.use-clock";
 export type { ClockDate } from "@gaopeng123/hooks.use-clock";
 export { useEasing, easingFuncs } from "@gaopeng123/hooks.use-easing";
@@ -50,8 +52,7 @@ export { useResize } from "@gaopeng123/hooks.use-resize";
 export type { ResizeProps } from "@gaopeng123/hooks.use-resize";
 export { useScale } from "@gaopeng123/hooks.use-scale";
 export type { ScaleProps } from "@gaopeng123/hooks.use-scale";
-export { useZoom } from "@gaopeng123/hooks.use-zoom";
-export type { ZoomProps } from "@gaopeng123/hooks.use-zoom";
+export { useZoom, useZoomAndDrag, ZoomProps } from "@gaopeng123/hooks.use-zoom";
 export { useWorker } from "@gaopeng123/hooks.use-worker";
 export type { UseWorkerProps } from "@gaopeng123/hooks.use-worker";
 export { useDebounce } from "@gaopeng123/hooks.use-debounce";
