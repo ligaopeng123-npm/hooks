@@ -12,7 +12,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createFetch, MethodEnum } from "@gaopeng123/fetch";
 import { CreateFetch, Method, Options } from "@gaopeng123/fetch/dist/typing";
-import { isArray, isFunction } from "@gaopeng123/utils.types";
+import { isFunction } from "@gaopeng123/utils.types";
 
 export type CheckResponse = (props: any) => any;
 export type Deps = Array<any>;

@@ -1,8 +1,17 @@
 # useFetch
 
-`(url: string, options: Options, checkResponse?: CheckResponse, deps: Array<any>) : [loading, error, data];`
+`注意：如果和@gaopeng123/fetch一起使用，共享拦截器注入的header属性，需要使用initCreateFetch方法把createFeatch函数注入下`
+
+## initCreateFetch
+
+```tsx
+export { get, post, put, del, patch, createFetch } from "@gaopeng123/fetch";
+initCreateFetch(createFetch);
+```
 
 ## 参数
+
+`(url: string, options: Options, checkResponse?: CheckResponse, deps: Array<any>) : [loading, error, data];`
 
 ```typescript
 type Method = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
