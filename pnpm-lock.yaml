@@ -63,7 +63,7 @@ importers:
       '@gaopeng123/hooks.use-debounce': ^0.7.2
       '@gaopeng123/hooks.use-easing': ^0.7.2
       '@gaopeng123/hooks.use-effect-once-in-strict-mode': workspace:^0.7.2
-      '@gaopeng123/hooks.use-fetch': ^0.7.4
+      '@gaopeng123/hooks.use-fetch': ^0.7.5-alpha.2
       '@gaopeng123/hooks.use-merge-value': ^0.7.2
       '@gaopeng123/hooks.use-pagination': ^0.7.2
       '@gaopeng123/hooks.use-poller': ^0.7.2
@@ -452,7 +452,7 @@ importers:
       webpack-dev-server: ^4.0.0
     dependencies:
       '@gaopeng123/fetch': 0.3.4
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -2209,8 +2209,8 @@ packages:
     resolution: {integrity: sha512-bhaVvBCOh9zpifUD+XZuhq7r3va6CjXid4LIEP31aP1jpznziLPkdAjCmkBvrp5KZQSvQLAjfCn1l1I1ehNhBg==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.file': 1.1.12-alpha.0
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.file': 1.1.12-alpha.2
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
       node-fetch: 2.6.7
     transitivePeerDependencies:
       - encoding
@@ -2223,13 +2223,13 @@ packages:
       '@gaopeng123/utils.types': 0.4.14
     dev: false
 
-  /@gaopeng123/utils.file/1.1.12-alpha.0:
-    resolution: {integrity: sha512-k5ExojgY2U5AtHXptWayTTIgW+aLXvLD5lZA22LJWHpX5LVx7T7SDRwvXbm6vr5HD5hMIJYsM8ak7rofmYOO5A==}
+  /@gaopeng123/utils.file/1.1.12-alpha.2:
+    resolution: {integrity: sha512-OSSmEMvStooxwysQdACz3EVxSJ5FqILYn6IjgWeW8c0TqTXyTxnUNvKIQtRmI6ODgUwRRultgyYvZ0Mf5OO37A==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.object': 1.1.11
-      '@gaopeng123/utils.string': 1.1.11
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.object': 1.1.12-alpha.2
+      '@gaopeng123/utils.string': 1.1.12-alpha.2
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
     dev: false
 
   /@gaopeng123/utils.function/0.4.14:
@@ -2260,27 +2260,27 @@ packages:
       '@gaopeng123/utils.types': 1.1.10
     dev: false
 
-  /@gaopeng123/utils.function/1.1.11:
-    resolution: {integrity: sha512-aooS1W1JGQLLFWzb0fQ3rWhfi8EktCGBnSSA3ZrloWr4ypYnCFwlB4HPjxVSnCDwVnSuv+mnoWDzD/8AEwXwyQ==}
+  /@gaopeng123/utils.function/1.1.12-alpha.2:
+    resolution: {integrity: sha512-/LyszdgxrXMWFI6L95BJ2uKrjC97xj8y768wyAF4noyK6epL4M/FolV3YOMvl5VVTNZaf2VZKsXrnxMQvdzXmQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
     dev: false
 
-  /@gaopeng123/utils.object/1.1.11:
-    resolution: {integrity: sha512-4Pf0YazF5dUcFaHLElDlkgUySce/lO89eE6uM8lzWUwEs+lxwX0IOC0JNGjppPHbMWrfG00H0D/ESdXpyBZPFw==}
+  /@gaopeng123/utils.object/1.1.12-alpha.2:
+    resolution: {integrity: sha512-/iC/fXiSavCOcV0FP3AaTm0vFuz/Fn2cTh9Qdmi5omlaL6MinMwbe4xLoR1ElPC1z2AYibX1yBdKbDHgqHexmg==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.function': 1.1.11
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.function': 1.1.12-alpha.2
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
     dev: false
 
-  /@gaopeng123/utils.string/1.1.11:
-    resolution: {integrity: sha512-8H8b1F8bouD5GK+M5pZ6SS3SZ9MIO+ytgNqqMck+LzqXmB5MWUNwdLQAUN1PxyWY7Rx7aoJ50RixHfw/rRzpgQ==}
+  /@gaopeng123/utils.string/1.1.12-alpha.2:
+    resolution: {integrity: sha512-jVceuXc0T64uqlnij2a588b5woFMzxm8StaZIY5PPSV4rLVWS6qqg77UiVnBugZTMKYkx1P/1gCxcL8Jq8hDEw==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.function': 1.1.11
-      '@gaopeng123/utils.types': 1.1.10
+      '@gaopeng123/utils.function': 1.1.12-alpha.2
+      '@gaopeng123/utils.types': 1.1.12-alpha.2
     dev: false
 
   /@gaopeng123/utils.types/0.4.14:
@@ -2300,6 +2300,11 @@ packages:
 
   /@gaopeng123/utils.types/1.1.10:
     resolution: {integrity: sha512-2emiceVF0D0TDQp4LxJmzQ0uy7hx6IcuX7rP6KVE2jChyWDdRBwKCuc8qj5g7FGaeSelYZTqzjEB5B//ic6ugw==}
+    engines: {node: '>=10'}
+    dev: false
+
+  /@gaopeng123/utils.types/1.1.12-alpha.2:
+    resolution: {integrity: sha512-GM6vXGMGRRuSW5h5ougTzkD800vPvdBfquUHGSNW4IILQkkUOrQ3Ne8sttyiX3DRTqcCMwlwm1obF9MhXVFg2A==}
     engines: {node: '>=10'}
     dev: false
 
