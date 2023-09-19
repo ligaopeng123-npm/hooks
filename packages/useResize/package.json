@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-resize",
-    "version": "0.7.5",
+    "version": "0.7.6",
     "description": "窗口自使用",
     "keywords": [
         "resize"

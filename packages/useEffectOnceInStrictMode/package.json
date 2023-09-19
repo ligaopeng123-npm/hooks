@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-effect-once-in-strict-mode",
-    "version": "0.7.5",
+    "version": "0.7.6",
     "description": "在严格模式下只执行一次的useEffect，特殊场景下使用",
     "keywords": [
         "effect",
