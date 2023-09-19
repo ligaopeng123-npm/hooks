@@ -2,7 +2,9 @@
 
 `(props?: ScaleProps):{x: number,y:number}`
 
-`监听窗口变化，动态缩放当前dom，并保持居中`
+>监听窗口变化，动态缩放当前dom，并保持居中
+>
+>[在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usescale--demo)
 
 ## 参数
 

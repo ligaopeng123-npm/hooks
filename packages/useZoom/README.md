@@ -1,6 +1,8 @@
 # `useZoom`
 
 > TODO: 放大缩小对应的dom
+>
+> [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usezoom--demo)
 
 ## Usage
 

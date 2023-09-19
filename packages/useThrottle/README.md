@@ -1,6 +1,8 @@
 # `useThrottle`
 
 > TODO: 节流hooks
+>
+> [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usethrottle--demo)
 
 `(fn: Fn, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []): Fn`
 

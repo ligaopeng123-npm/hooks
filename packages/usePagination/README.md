@@ -1,6 +1,8 @@
 # `usePagination`
 
 > TODO: 分页hooks
+>
+> [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usepagination--demo)
 
 ## Usage
 

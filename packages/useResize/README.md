@@ -2,7 +2,9 @@
 
 `(props:ResizeProps):WindowSize`
 
-`监听窗口变化，返回窗口尺寸`
+>监听窗口变化，返回窗口尺寸
+>
+>[在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-useresize--demo)
 
 ## 参数
 

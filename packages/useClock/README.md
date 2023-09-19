@@ -1,6 +1,6 @@
 # useClock 
 
-`时钟器`
+>时钟器 [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-useclock--demo)
 
 ## 参数
 

@@ -3,6 +3,8 @@
 # useWorker
 
 > 在react中使用web worker；需要 webpack5 或者 react-script5环境
+>
+> [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-useworker--demo)
 
 ## 参数
 

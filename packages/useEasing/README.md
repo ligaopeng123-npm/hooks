@@ -1,6 +1,10 @@
 # useEasing
 
-`缓动函数`[参考](https://echarts.apache.org/examples/zh/editor.html?c=line-easing)
+>缓动函数
+>
+>[在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-useeasing--demo) 
+>
+>[参考](https://echarts.apache.org/examples/zh/editor.html?c=line-easing)
 
 ## 参数
 

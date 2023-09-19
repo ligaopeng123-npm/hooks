@@ -1,6 +1,8 @@
 # useFetch
 
-`注意：如果和@gaopeng123/fetch一起使用，共享拦截器注入的header属性，需要使用initCreateFetch方法把createFeatch函数注入下`
+>注意：如果和@gaopeng123/fetch一起使用，共享拦截器注入的header属性，需要使用initCreateFetch方法把createFeatch函数注入下
+>
+>[在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usefetch--demo)
 
 ## initCreateFetch
 

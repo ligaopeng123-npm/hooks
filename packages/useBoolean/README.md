@@ -1,6 +1,8 @@
 # # useBoolean
 
 > TODO:  bool类型定义，使用场景：窗口的打开关闭；loading状态的控制等；
+>
+> [在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-useboolean--demo)
 
 ## 参数
 

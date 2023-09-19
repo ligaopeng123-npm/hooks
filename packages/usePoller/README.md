@@ -2,7 +2,9 @@
 
 `(props: PollerProps): [number, () => void, () => void]`
 
-`轮询器,包括同步轮询，异步轮询`
+>轮询器,包括同步轮询，异步轮询
+>
+>[在线demo](https://ligaopeng123-npm.github.io/hooks/?path=/story/example-usepoller--demo)
 
 ## 参数
 
