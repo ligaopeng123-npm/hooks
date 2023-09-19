@@ -1,5 +1,4 @@
-import { Meta } from "@storybook/blocks";
-
+import { Meta, Markdown } from "@storybook/blocks";
 import Github from "./assets/github.svg";
 import Discord from "./assets/discord.svg";
 import Youtube from "./assets/youtube.svg";
@@ -14,6 +13,7 @@ import Testing from "./assets/testing.png";
 import Accessibility from "./assets/accessibility.png";
 import Theming from "./assets/theming.png";
 import AddonLibrary from "./assets/addon-library.png";
+import ReadMe from "../packages/hooks/README.md?raw";
 
 export const RightArrow = () => <svg 
     viewBox="0 0 14 14" 
@@ -31,8 +31,8 @@ export const RightArrow = () => <svg
   <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
 </svg>
 
-<Meta title="Configure your project" />
-
+<Meta title="hooks" />
+<Markdown>{ReadMe}</Markdown>
 <div className="sb-container">
   <div className='sb-section-title'>
     # Configure your project

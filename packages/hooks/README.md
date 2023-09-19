@@ -4,18 +4,18 @@
 
 > [!NOTE]
 > **@gaopeng123/hooks 是一个react hooks库，收集一些常用的hooks。**
->
 
 ## 下载
 
 ```shell
 npm i @gaopeng123/hooks
-or yarn add @gaopeng123/hooks
+pnpm add @gaopeng123/hooks
+yarn add @gaopeng123/hooks
 ```
 
 ## 文档
 
-[https://ligaopeng123-npm.github.io/utils/#/md/hooks/index](https://ligaopeng123-npm.github.io/utils/#/md/hooks/index)
+https://ligaopeng123-npm.github.io/hooks/
 
 ## 预览
 
@@ -34,39 +34,39 @@ or yarn add @gaopeng123/hooks
 
 ## Usage
 
-* [useScale](./src/useScale/README.md)：监听窗口变化，动态缩放当前dom。
+* [useScale](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usescale--docs)：监听窗口变化，动态缩放当前dom。
 
-* [useZoom](./src/useZoom/README.md)：监听窗口变化，动态调整zoom大小。
+* [useZoom](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usezoom--docs)：监听窗口变化，动态调整zoom大小。
 
-* [useResize](./src/useResize/README.md)：监听窗口变化，返回窗口尺寸。
+* [useResize](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useresize--docs)：监听窗口变化，返回窗口尺寸。
 
 * [useMergeValue](./src/useMergeValue/README.md)：解决npm因peerDependencies导致安装失败问题。
 
-* [useEasing](./src/useEasing/README.md)：缓动函数。
+* [useEasing](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useeasing--docs)：缓动函数。
 
-* [useClock](./src/useClock/README.md)：时钟器。
+* [useClock](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useclock--docs)：时钟器。
 
-* [usePoller](./src/usePoller/README.md)：轮询器,包括同步轮询，异步轮询。
+* [usePoller](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usepoller--docs)：轮询器,包括同步轮询，异步轮询。
 
-* [useFetch](./src/useFetch/README.md)：请求函数
+* [useFetch](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usefetch--docs)：请求函数
 
-* [useWorker](./src/useWorker/README.md)：Web Worker使用
+* [useWorker](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useworker--docs)：Web Worker使用
 
-* [useDebounce](./src/useDebounce/README.md)：去抖
+* [useDebounce](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usedebounce--docs)：去抖
 
-* [useThrottle](./src/useThrottle/README.md)：节流
+* [useThrottle](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usethrottle--docs)：节流
 
-* [useThrottleAndMerge](./src/useThrottleAndMerge/README.md)：节流并合并数据
+* [useThrottleAndMerge](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usethrottleandmerge--docs)：节流并合并数据
 
-* [useReloadAfterStationary](./src/useReloadAfterStationary/README.md)：无操作后重新加载当前页面
+* [useReloadAfterStationary](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usereloadafterstationary--docs)：无操作后重新加载当前页面
 
-* [usePagination](./src/usePagination/README.md)：分页器
+* [usePagination](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usepagination--docs)：分页器
 
-* [useBoolean](./src/useBoolean/README.md)：boolean类型管理器
+* [useBoolean](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useboolean--docs)：boolean类型管理器
 
-* [useAntdTableSelection](./src/useAntdTableSelection/README.md)：antd proTable处理选中
+* [useAntdTableSelection](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-useantdtableselection--docs)：antd proTable处理选中
 
-* [useEffectOnceInStrictMode](./src/useEffectOnceInStrictMode/README.md)：react18 严格模式下只执行一次
+* [useEffectOnceInStrictMode](https://ligaopeng123-npm.github.io/hooks/?path=/docs/example-usereloadafterstationary--docs)：react18 严格模式下只执行一次
 
   
 
