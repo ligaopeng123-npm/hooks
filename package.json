@@ -1,100 +1,114 @@
 {
-    "version": "0.1.7",
-    "license": "MIT",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts",
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "files": [
-        "dist",
-        "src"
-    ],
-    "engines": {
-        "node": ">=10"
-    },
-    "scripts": {
-        "dev": "dotenv -v NODE_ENV=development webpack serve --mode development",
-        "docs": "dotenv -v NODE_ENV=production webpack build",
-        "build": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run build",
-        "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
-        "push": "lerna publish",
-        "pushAll": "lerna exec -- pnpm run push",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-        "lint": "tsdx lint",
-        "prepare": "tsdx build",
-        "size": "size-limit",
-        "analyze": "size-limit --why"
-    },
-    "peerDependencies": {
-        "react": ">=16.8"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "tsdx lint",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
-    "prettier": {
-        "printWidth": 80,
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "es5"
-    },
-    "name": "@gaopeng123/hooks",
-    "author": "ligaopeng123",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ligaopeng123-npm/hooks.git"
-    },
-    "module": "dist/hooks.esm.js",
-    "size-limit": [
-        {
-            "path": "dist/hooks.cjs.production.min.js",
-            "limit": "10 KB"
-        },
-        {
-            "path": "dist/hooks.esm.js",
-            "limit": "10 KB"
-        }
-    ],
-    "devDependencies": {
-        "@size-limit/preset-small-lib": "^5.0.1",
-        "@types/react": "^17.0.15",
-        "@types/react-dom": "^17.0.9",
-        "@types/react-router-dom": "^5.3.2",
-        "babel-loader": "^8.2.3",
-        "commitizen": "^4.3.0",
-        "conventional-changelog-cli": "^2.2.2",
-        "cz-conventional-changelog": "^3.3.0",
-        "dotenv-cli": "^6.0.0",
-        "html-webpack-plugin": "^5.3.2",
-        "husky": "^7.0.1",
-        "lerna": "^6.1.0",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-router-dom": "^5.3.0",
-        "size-limit": "^5.0.1",
-        "ts-loader": "^9.2.5",
-        "tsdx": "^0.14.1",
-        "tslib": "^2.3.0",
-        "typescript": "^4.3.5",
-        "webpack": "^5.51.1",
-        "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^4.0.0"
-    },
-    "pnpm": {
-        "overrides": {
-            "language-tags": "1.0.5"
-        }
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
+  "version": "0.1.7",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev": "dotenv -v NODE_ENV=development webpack serve --mode development",
+    "docs": "dotenv -v NODE_ENV=production webpack build",
+    "build": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run build",
+    "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
+    "push": "lerna publish",
+    "pushAll": "lerna exec -- pnpm run push",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "storybook dev -p 6007",
+    "build-storybook": "storybook build --output-dir docs"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@gaopeng123/hooks",
+  "author": "ligaopeng123",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ligaopeng123-npm/hooks.git"
+  },
+  "module": "dist/hooks.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/hooks.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/hooks.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.22.15",
+    "@size-limit/preset-small-lib": "^5.0.1",
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/react": "^7.4.2",
+    "@storybook/react-webpack5": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.3.2",
+    "babel-loader": "^8.2.3",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv-cli": "^6.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.1",
+    "lerna": "^6.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "size-limit": "^5.0.1",
+    "storybook": "^7.4.2",
+    "ts-loader": "^9.2.5",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "language-tags": "1.0.5"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

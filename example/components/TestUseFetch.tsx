@@ -23,7 +23,7 @@ import {
     useCtrlGet,
     useGetFetch,
     useUpdateGet
-} from "../../packages/useFetch/src";
+} from "../../packages/useFetch";
 
 type TestUseFetchProps = {};
 const itemStyle = {

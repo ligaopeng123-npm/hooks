@@ -12,7 +12,7 @@
  *
  **********************************************************************/
 import React, { useEffect, useRef, useState } from 'react';
-import { useThrottleAndMerge, useThrottleAndMergeFns } from "../../packages/useThrottleAndMerge/src";
+import { useThrottleAndMerge, useThrottleAndMergeFns } from "../../packages/useThrottleAndMerge";
 
 type TestUseThrottleAndMergeProps = {};
 const TestUseThrottleAndMerge: React.FC<TestUseThrottleAndMergeProps> = (props) => {

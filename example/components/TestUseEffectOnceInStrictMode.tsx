@@ -11,8 +11,8 @@
  * @版权所有: pgli
  *
  **********************************************************************/
-import React, { useState, useEffect } from 'react';
-import { useEffectOnceInStrictMode } from "../../packages/useEffectOnceInStrictMode/src";
+import React, { useState } from 'react';
+import { useEffectOnceInStrictMode } from "../../packages/useEffectOnceInStrictMode";
 
 const TestUseEffectOnceInStrictMode = () => {
     const [timmer, setTimmer] = useState<any>();

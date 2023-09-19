@@ -29,4 +29,6 @@ export {
     useCtrlDel,
 } from "./useFetch";
 
+export type { CheckResponse, Deps } from "./useFetch";
+
 

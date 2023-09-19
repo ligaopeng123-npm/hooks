@@ -10,8 +10,7 @@
  *
  **********************************************************************/
 import React, { useRef } from 'react';
-import useZoom from "../../packages/useZoom/src/useZoom";
-import userZoomAndDrag from "../../packages/useZoom/src/useZoomAndDrag";
+import {useZoom, useZoomAndDrag} from "../../packages/useZoom";
 
 type TestUseZoomProps = {};
 const TestUseZoom: React.FC<TestUseZoomProps> = (props) => {
@@ -22,7 +21,7 @@ const TestUseZoom: React.FC<TestUseZoomProps> = (props) => {
         }
     });
 
-    const [z, { zoomReset }] = userZoomAndDrag({ zoomDom: ref })
+    const [z, { zoomReset }] = useZoomAndDrag({ zoomDom: ref })
     return (
         <div style={{ backgroundColor: '#97fa04', width: '100%', height: '100%' }}>
             <h3>useZoom</h3>
