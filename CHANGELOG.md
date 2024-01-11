@@ -1,4 +1,52 @@
-## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.1...v0.1.7) (2023-08-10)
+## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.6...v0.1.7) (2024-01-11)
+
+
+
+## [0.7.6](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.5-alpha.2...v0.7.6) (2023-09-19)
+
+
+
+## [0.7.5-alpha.2](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.5-alpha.1...v0.7.5-alpha.2) (2023-09-13)
+
+
+### Features
+
+* useFetch 文档更新 ([144d284](https://github.com/ligaopeng123-npm/hooks/commit/144d2841740c4f40a97b998cfa57840842596dfa))
+
+
+
+## [0.7.5-alpha.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.5-alpha.0...v0.7.5-alpha.1) (2023-09-04)
+
+
+### Features
+
+* useZoomAndDrag add zoomReset ([26ccadd](https://github.com/ligaopeng123-npm/hooks/commit/26ccadd7cf244d0d75d55557b9d7b8051e3ed6e4))
+
+
+
+## [0.7.5-alpha.0](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.4...v0.7.5-alpha.0) (2023-09-04)
+
+
+### Features
+
+* useZoomAndDrag ([9dfe1c3](https://github.com/ligaopeng123-npm/hooks/commit/9dfe1c3bf13d734ba3bd76ba8f5f8cbe3ea58c97))
+
+
+
+## [0.7.4](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.3...v0.7.4) (2023-08-24)
+
+
+### Bug Fixes
+
+* 依赖变更 ([41fa824](https://github.com/ligaopeng123-npm/hooks/commit/41fa82426fc3f5dfe52989f47b8acf76ec6fce8b))
+
+
+
+## [0.7.3](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.2...v0.7.3) (2023-08-10)
+
+
+
+## [0.7.2](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.1...v0.7.2) (2023-08-10)
 
 
 ### Features
