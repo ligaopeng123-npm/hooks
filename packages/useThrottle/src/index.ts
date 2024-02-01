@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {useThrottle} from "./useThrottle";
-export type {ThrottleOptions} from "@gaopeng123/utils.function";
+export { useThrottle } from "./useThrottle";
+export type { ThrottleOptions } from "@gaopeng123/utils.function";

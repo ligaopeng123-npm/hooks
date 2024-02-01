@@ -16,7 +16,7 @@ export type ResizeProps = {
     wait?: number; // 等待时间
 }
 
-const useResize = (props?: ResizeProps) => {
+export const useResize = (props?: ResizeProps) => {
     const [size, setSize] = useState(windowSize());
     useEffect(() => {
         const onResize = debounce(() => {
@@ -29,5 +29,3 @@ const useResize = (props?: ResizeProps) => {
     }, []);
     return size as WindowSize;
 };
-
-export default useResize;

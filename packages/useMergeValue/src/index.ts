@@ -9,4 +9,4 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useMergeValue} from "./useMergeValue";
+export { useMergeValue } from "./useMergeValue";

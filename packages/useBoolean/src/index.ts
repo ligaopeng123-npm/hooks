@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export { default as useBoolean } from './useBoolean';
+export { useBoolean } from './useBoolean';
 export type { BooleanBack, Actions } from './useBoolean';

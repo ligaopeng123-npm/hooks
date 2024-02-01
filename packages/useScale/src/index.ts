@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useScale} from "./useScale";
-export type {ScaleProps} from "./useScale";
+export { useScale } from "./useScale";
+export type { ScaleProps } from "./useScale";

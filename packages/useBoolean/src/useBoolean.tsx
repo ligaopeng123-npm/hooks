@@ -20,7 +20,7 @@ export type Actions = {
     setBool: ActionsSetFn // 根据传递的值设置
 };
 export type BooleanBack = [boolean, Actions];
-const useBoolean = (_bool: boolean = false): BooleanBack => {
+export const useBoolean = (_bool: boolean = false): BooleanBack => {
     const [bool, setBool] = useState(_bool);
     const actions = useMemo(() => {
         return {
@@ -33,5 +33,3 @@ const useBoolean = (_bool: boolean = false): BooleanBack => {
 
     return [bool, actions]
 };
-
-export default useBoolean;

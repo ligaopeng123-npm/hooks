@@ -1,1 +1,1 @@
-export { default as useEffectOnceInStrictMode } from './useEffectOnceInStrictMode';
+export { useEffectOnceInStrictMode } from './useEffectOnceInStrictMode';

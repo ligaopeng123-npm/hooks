@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useWorker} from './useWorker';
-export type {UseWorkerProps} from './useWorker'
+export { useWorker } from './useWorker';
+export type { UseWorkerProps } from './useWorker'

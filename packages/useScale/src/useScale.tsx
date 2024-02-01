@@ -19,7 +19,7 @@ export type ScaleProps = {
     height?: number; // 要求的理想宽高 小于或者大于该数据后进行缩放
 };
 
-const useScale = (props?: ScaleProps) => {
+export const useScale = (props?: ScaleProps) => {
     const [scale, setScale] = useState({x: 1, y: 1});
     const {
         scaleDom,
@@ -62,5 +62,3 @@ const useScale = (props?: ScaleProps) => {
     }, [scale]);
     return scale;
 };
-
-export default useScale;

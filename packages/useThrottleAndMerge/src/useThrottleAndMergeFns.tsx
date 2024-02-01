@@ -12,14 +12,14 @@
  *
  **********************************************************************/
 import React, { useState, useLayoutEffect } from 'react';
-import useThrottleAndMerge, { Fns } from "./useThrottleAndMerge";
+import { useThrottleAndMerge, Fns } from "./useThrottleAndMerge";
 
 /**
  * 合并多个节流函数
  * @param fns
  * @param wait
  */
-const useThrottleAndMergeFns = (fns: Fns, wait: number = 200)=> {
+export const useThrottleAndMergeFns = (fns: Fns, wait: number = 200)=> {
     const onClick = useThrottleAndMerge(fns, wait);
     const [currentFns, setFns] = useState<any>({});
     useLayoutEffect(()=> {
@@ -33,5 +33,3 @@ const useThrottleAndMergeFns = (fns: Fns, wait: number = 200)=> {
     }, []);
     return currentFns;
 }
-
-export default useThrottleAndMergeFns;

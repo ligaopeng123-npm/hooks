@@ -29,7 +29,7 @@ export const initCreateFetch = (createFetch: CreateFetch)=> {
     currentCreateFetch = createFetch;
 }
 
-const useFetch = (url: string, options: Options & { trigger?: triggerEnum, method?: Method }, checkResponse?: CheckResponse, deps?: Deps) => {
+export const useFetch = (url: string, options: Options & { trigger?: triggerEnum, method?: Method }, checkResponse?: CheckResponse, deps?: Deps) => {
     const [data, setData] = useState<any>();
     const [error, setError] = useState<string | Error>('');
     const [loading, setLoading] = useState<boolean>(true);
@@ -106,9 +106,6 @@ const useFetch = (url: string, options: Options & { trigger?: triggerEnum, metho
         }
     }];
 }
-
-
-export default useFetch;
 
 export const useGet = (url: string, options?: Options, checkResponse?: CheckResponse, deps?: Deps) => {
     const [loading, error, data] = useFetch(url, Object.assign({method: MethodEnum.get}, options), checkResponse, deps);

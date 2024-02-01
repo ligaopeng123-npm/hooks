@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export { default as usePagination } from './usePagination';
+export { usePagination } from './usePagination';
 export type { PaginationProps } from './usePagination';

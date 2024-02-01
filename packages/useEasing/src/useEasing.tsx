@@ -224,7 +224,7 @@ export type Easing = {
     timers: number; // 执行次数
 }
 // duration 持续时间
-const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
+export const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
     const {intervals, duration, easingType, immediate} = Object.assign({
         immediate: true,
         duration: 1000,
@@ -274,5 +274,3 @@ const useEasing = (props: UseEasingProps): [number, () => void, () => void] => {
             // setEasing(Object.assign({}, easing, {timers: 0}));
         }];
 };
-
-export default useEasing;

@@ -15,7 +15,7 @@ export type UseWorkerProps = {
     worker: Worker;
     params?: any
 };
-const useWorker: React.FC<UseWorkerProps> = (props) => {
+export const useWorker: React.FC<UseWorkerProps> = (props) => {
     const {worker, params} = props;
     const [workerEvent, setWorkerEvent] = useState<any>(null);
     useEffect(() => {
@@ -32,5 +32,3 @@ const useWorker: React.FC<UseWorkerProps> = (props) => {
     }, [worker, params]);
     return workerEvent;
 };
-
-export default useWorker;

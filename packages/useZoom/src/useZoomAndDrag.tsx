@@ -12,10 +12,10 @@
  *
  **********************************************************************/
 import React, { useEffect, useRef } from 'react';
-import useZoom, { ZoomCallBack, ZoomProps } from "./useZoom";
+import { useZoom, ZoomCallBack, ZoomProps } from "./useZoom";
 import { getTransform, getZoomDom, setTransform } from "./utils";
 
-const useZoomAndDrag = (props: ZoomProps): [number, ZoomCallBack] => {
+export const useZoomAndDrag = (props: ZoomProps): [number, ZoomCallBack] => {
     const [zoom, { zoomUp, zoomDown, zoomReset }] = useZoom(props);
     const zoomRef = useRef<{ _type?: 'in' | 'out' | null, drag?: { x: number, y: number } }>({ _type: null });
     useEffect(() => {
@@ -96,5 +96,3 @@ const useZoomAndDrag = (props: ZoomProps): [number, ZoomCallBack] => {
         },
     }]
 }
-
-export default useZoomAndDrag;

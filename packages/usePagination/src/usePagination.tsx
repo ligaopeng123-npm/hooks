@@ -7,7 +7,7 @@ export type PaginationProps = {
     onMax?: (current: number) => void;
     onMin?: (current: number) => void;
 }
-const usePagination = (props: PaginationProps): [number, () => void, () => void, () => void] => {
+export const usePagination = (props: PaginationProps): [number, () => void, () => void, () => void] => {
     const {pageNum, pageSize, total, onMax, onMin} = Object.assign({pageNum: 1, pageSize: 20}, props);
     const [current, setCurrent] = useState(pageNum);
 
@@ -38,5 +38,3 @@ const usePagination = (props: PaginationProps): [number, () => void, () => void,
 
     return [current, next, last, reset];
 }
-
-export default usePagination;

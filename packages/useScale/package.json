@@ -6,6 +6,7 @@
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
     "license": "MIT",
     "main": "dist/index.js",
+    "module": "dist/hooks.use-scale.esm.js",
     "typings": "dist/index.d.ts",
     "private": false,
     "publishConfig": {
@@ -59,7 +60,7 @@
     },
     "dependencies": {
         "@gaopeng123/hooks.use-resize": "^0.7.6",
-        "@gaopeng123/utils.types": "^0.4.0"
+        "@gaopeng123/utils.types": "latest"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }

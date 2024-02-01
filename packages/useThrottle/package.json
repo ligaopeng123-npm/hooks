@@ -6,6 +6,7 @@
 	"homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
 	"license": "MIT",
 	"main": "dist/index.js",
+	"module": "dist/hooks.use-throttle.esm.js",
 	"typings": "dist/index.d.ts",
 	"private": false,
 	"publishConfig": {
@@ -58,7 +59,7 @@
 		"url": "https://github.com/ligaopeng123-npm/hooks/issues"
 	},
 	"dependencies": {
-		"@gaopeng123/utils.function": "^1.0.5"
+		"@gaopeng123/utils.function": "latest"
 	},
 	"gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }

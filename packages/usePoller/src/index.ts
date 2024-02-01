@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as usePoller} from "./usePoller";
-export type {PollerMark, PollerProps} from "./usePoller";
+export { usePoller } from "./usePoller";
+export type { PollerMark, PollerProps } from "./usePoller";

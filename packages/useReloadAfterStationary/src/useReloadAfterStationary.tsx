@@ -14,12 +14,10 @@
 import React, { useEffect } from  'react';
 import { hasOperate, OperateConfig } from "@gaopeng123/utils.function";
 
-const useReloadAfterStationary = (config: OperateConfig) => {
+export const useReloadAfterStationary = (config: OperateConfig) => {
     useEffect(()=> {
         hasOperate(()=> {
             window.location.reload();
         }, config);
     }, []);
 }
-
-export default useReloadAfterStationary;

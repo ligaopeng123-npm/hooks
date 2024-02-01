@@ -1,6 +1,6 @@
 export {
     initCreateFetch,
-    default as useFetch,
+    useFetch,
     useGet,
     usePost,
     usePatch,

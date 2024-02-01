@@ -14,7 +14,7 @@ import React, { useState } from 'react';
 export type useAntdTableSelectionProps = {
     idKey: string
 };
-const useAntdTableSelection = (props: useAntdTableSelectionProps) => {
+export const useAntdTableSelection = (props: useAntdTableSelectionProps) => {
     const {idKey} = props;
     const [selectedRows, setSelectedRows] = useState<Array<any>>([]);
     const rowSelection = {
@@ -30,5 +30,3 @@ const useAntdTableSelection = (props: useAntdTableSelectionProps) => {
     };
     return [{selectedRows, rowSelection}, {clearSelected: () => setSelectedRows([])}]
 }
-
-export default useAntdTableSelection;

@@ -5,7 +5,7 @@ export type VisibilityProps = {
     wait?: number;
     onVisibilitychange?: (visibility: boolean) => void;
 }
-const useVisibility = (props?: VisibilityProps) => {
+export const useVisibility = (props?: VisibilityProps) => {
     const {wait, onVisibilitychange} = props || {};
     const [visibility, setVisibility] = useState(true);
     useEffect(() => {
@@ -24,5 +24,3 @@ const useVisibility = (props?: VisibilityProps) => {
     }, []);
     return visibility;
 }
-
-export default useVisibility;

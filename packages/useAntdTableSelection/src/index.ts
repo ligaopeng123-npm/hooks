@@ -1,2 +1,2 @@
-export { default as useAntdTableSelection } from './useAntdTableSelection';
+export { useAntdTableSelection } from './useAntdTableSelection';
 export type { useAntdTableSelectionProps } from './useAntdTableSelection';

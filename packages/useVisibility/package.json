@@ -9,6 +9,7 @@
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
     "license": "MIT",
     "main": "dist/index.js",
+    "module": "dist/hooks.use-visibility.esm.js",
     "typings": "dist/index.d.ts",
     "private": false,
     "publishConfig": {
@@ -62,7 +63,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/utils.function": "^0.5.2"
+        "@gaopeng123/utils.function": "latest"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
 }

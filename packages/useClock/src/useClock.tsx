@@ -26,7 +26,7 @@ const getClockDate = (time: number) => {
 		week: getWeekCN(new Date(time))
 	}
 };
-const useClock = (): ClockDate => {
+export const useClock = (): ClockDate => {
 	// 使用轮询器调用 当time变更时 触发变化 将clock返回
 	const [time] = usePoller({delay: 1000});
 	const [clock, setClock] = useState<ClockDate>(getClockDate(time));
@@ -35,5 +35,3 @@ const useClock = (): ClockDate => {
 	}, [time]);
 	return clock;
 };
-
-export default useClock;

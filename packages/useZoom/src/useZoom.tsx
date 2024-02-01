@@ -28,7 +28,7 @@ export interface ZoomCallBack {
     zoomReset: () => void,
 }
 
-const useZoom = (props?: ZoomProps): [number, ZoomCallBack] => {
+export const useZoom = (props?: ZoomProps): [number, ZoomCallBack] => {
     const { zoomDom, max, min, step, defaultZoom, onMin, onMax } = Object.assign({
         max: 2,
         min: 0.5,
@@ -76,5 +76,3 @@ const useZoom = (props?: ZoomProps): [number, ZoomCallBack] => {
         }
     }]
 };
-
-export default useZoom;

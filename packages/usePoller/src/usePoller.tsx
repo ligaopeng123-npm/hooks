@@ -28,7 +28,7 @@ export type PollerProps = {
     asyncCallBack?: (args: PollerMark) => Promise<any>;
 }
 
-const usePoller = (props: PollerProps): [number, () => void, () => void] => {
+export const usePoller = (props: PollerProps): [number, () => void, () => void] => {
     const {delay, callBack, asyncCallBack, immediate} = props;
     // 日期时间戳记录
     const [dateStamp, setDateStamp] = useState<number>(Date.now());
@@ -110,5 +110,3 @@ const usePoller = (props: PollerProps): [number, () => void, () => void] => {
         }));
     }];
 };
-
-export default usePoller;

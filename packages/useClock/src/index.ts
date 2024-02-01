@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useClock} from "./useClock";
-export type {ClockDate} from "./useClock";
+export { useClock } from "./useClock";
+export type { ClockDate } from "./useClock";

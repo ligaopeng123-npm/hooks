@@ -17,7 +17,7 @@ import { createThrottle, throttleOptions, ThrottleOptions } from "@gaopeng123/ut
 type Fn = (...props: any) => any;
 export type Fns = {[key:string]: Fn};
 
-const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []) => {
+export const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []) => {
     const {current} = useRef<any>({fn, timer: 0});
     useEffect(function () {
         current.data = [];
@@ -69,5 +69,3 @@ const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: Throttle
         current.timer = throttle(...args);
     }, dep);
 };
-
-export default useThrottleAndMerge;

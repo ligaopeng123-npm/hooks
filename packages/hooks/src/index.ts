@@ -9,8 +9,6 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-import { useZoomAndDrag } from "@gaopeng123/hooks.use-zoom";
-
 export { useClock } from "@gaopeng123/hooks.use-clock";
 export type { ClockDate } from "@gaopeng123/hooks.use-clock";
 export { useEasing, easingFuncs } from "@gaopeng123/hooks.use-easing";

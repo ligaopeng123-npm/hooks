@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export { default as useVisibility } from './useVisibility';
+export { useVisibility } from './useVisibility';
 export type { VisibilityProps } from './useVisibility';

@@ -11,7 +11,7 @@
  **********************************************************************/
 import React, { DependencyList, EffectCallback, useEffect, useRef } from 'react';
 
-const useEffectOnceInStrictMode = (effect: EffectCallback, deps: DependencyList) => {
+export const useEffectOnceInStrictMode = (effect: EffectCallback, deps: DependencyList) => {
     const loadRef = useRef(process.env.NODE_ENV === 'development');
     useEffect(parseInt(React.version) > 17 ? () => {
         if (loadRef.current) {
@@ -21,5 +21,3 @@ const useEffectOnceInStrictMode = (effect: EffectCallback, deps: DependencyList)
         return effect();
     } : effect, deps);
 };
-
-export default useEffectOnceInStrictMode;

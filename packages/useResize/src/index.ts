@@ -9,5 +9,5 @@
  * @版权所有: pgli
  *
  ********************************************************************* */
-export {default as useResize} from "./useResize";
-export type {ResizeProps} from "./useResize";
+export { useResize } from "./useResize";
+export type { ResizeProps } from "./useResize";
