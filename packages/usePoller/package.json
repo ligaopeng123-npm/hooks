@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-poller",
-    "version": "0.7.6",
+    "version": "0.7.8",
     "description": "轮询器",
     "keywords": [
         "hooks",

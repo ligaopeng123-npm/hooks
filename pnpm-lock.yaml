@@ -81,24 +81,24 @@ importers:
 
   packages/hooks:
     specifiers:
-      '@gaopeng123/hooks.use-antd-table-selection': workspace:^0.7.7
-      '@gaopeng123/hooks.use-boolean': ^0.7.6
-      '@gaopeng123/hooks.use-clock': ^0.7.6
-      '@gaopeng123/hooks.use-debounce': ^0.7.6
-      '@gaopeng123/hooks.use-easing': ^0.7.6
-      '@gaopeng123/hooks.use-effect-once-in-strict-mode': workspace:^0.7.7
-      '@gaopeng123/hooks.use-fetch': ^0.7.6
-      '@gaopeng123/hooks.use-merge-value': ^0.7.2
-      '@gaopeng123/hooks.use-pagination': ^0.7.6
-      '@gaopeng123/hooks.use-poller': ^0.7.6
-      '@gaopeng123/hooks.use-reload-after-stationary': ^0.7.6
-      '@gaopeng123/hooks.use-resize': ^0.7.6
-      '@gaopeng123/hooks.use-scale': ^0.7.6
-      '@gaopeng123/hooks.use-throttle': ^0.7.6
-      '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.6
-      '@gaopeng123/hooks.use-visibility': ^0.7.6
-      '@gaopeng123/hooks.use-worker': ^0.7.6
-      '@gaopeng123/hooks.use-zoom': ^0.7.6
+      '@gaopeng123/hooks.use-antd-table-selection': workspace:^0.7.8
+      '@gaopeng123/hooks.use-boolean': ^0.7.8
+      '@gaopeng123/hooks.use-clock': ^0.7.8
+      '@gaopeng123/hooks.use-debounce': ^0.7.8
+      '@gaopeng123/hooks.use-easing': ^0.7.8
+      '@gaopeng123/hooks.use-effect-once-in-strict-mode': workspace:^0.7.8
+      '@gaopeng123/hooks.use-fetch': ^0.7.8
+      '@gaopeng123/hooks.use-merge-value': ^0.7.8
+      '@gaopeng123/hooks.use-pagination': ^0.7.8
+      '@gaopeng123/hooks.use-poller': ^0.7.8
+      '@gaopeng123/hooks.use-reload-after-stationary': ^0.7.8
+      '@gaopeng123/hooks.use-resize': ^0.7.8
+      '@gaopeng123/hooks.use-scale': ^0.7.8
+      '@gaopeng123/hooks.use-throttle': ^0.7.8
+      '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.8
+      '@gaopeng123/hooks.use-visibility': ^0.7.8
+      '@gaopeng123/hooks.use-worker': ^0.7.8
+      '@gaopeng123/hooks.use-zoom': ^0.7.8
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
       '@types/react-dom': ^17.0.9
@@ -260,7 +260,7 @@ importers:
 
   packages/useClock:
     specifiers:
-      '@gaopeng123/hooks.use-poller': ^0.7.6
+      '@gaopeng123/hooks.use-poller': ^0.7.8
       '@gaopeng123/utils.date': latest
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
@@ -344,7 +344,7 @@ importers:
 
   packages/useEasing:
     specifiers:
-      '@gaopeng123/hooks.use-poller': ^0.7.6
+      '@gaopeng123/hooks.use-poller': ^0.7.8
       '@gaopeng123/utils.types': latest
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
@@ -697,7 +697,7 @@ importers:
 
   packages/useScale:
     specifiers:
-      '@gaopeng123/hooks.use-resize': ^0.7.6
+      '@gaopeng123/hooks.use-resize': ^0.7.8
       '@gaopeng123/utils.types': latest
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
@@ -901,7 +901,7 @@ importers:
 
   packages/useZoom:
     specifiers:
-      '@gaopeng123/hooks.use-resize': ^0.7.6
+      '@gaopeng123/hooks.use-resize': ^0.7.8
       '@gaopeng123/utils.types': latest
       '@size-limit/preset-small-lib': ^5.0.1
       '@types/react': ^17.0.15
