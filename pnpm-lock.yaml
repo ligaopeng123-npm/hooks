@@ -95,7 +95,7 @@ importers:
       '@gaopeng123/hooks.use-resize': ^0.7.8
       '@gaopeng123/hooks.use-scale': ^0.7.8
       '@gaopeng123/hooks.use-throttle': ^0.7.8
-      '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.8
+      '@gaopeng123/hooks.use-throttle-and-merge': ^0.7.9-alpha.0
       '@gaopeng123/hooks.use-visibility': ^0.7.8
       '@gaopeng123/hooks.use-worker': ^0.7.8
       '@gaopeng123/hooks.use-zoom': ^0.7.8
@@ -281,7 +281,7 @@ importers:
       webpack-dev-server: ^4.0.0
     dependencies:
       '@gaopeng123/hooks.use-poller': link:../usePoller
-      '@gaopeng123/utils.date': 1.1.15-alpha.2
+      '@gaopeng123/utils.date': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -322,7 +322,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -365,7 +365,7 @@ importers:
       webpack-dev-server: ^4.0.0
     dependencies:
       '@gaopeng123/hooks.use-poller': link:../usePoller
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -475,8 +475,8 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/fetch': 0.3.4
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/fetch': 0.3.10
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -593,7 +593,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -634,7 +634,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -675,7 +675,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -718,7 +718,7 @@ importers:
       webpack-dev-server: ^4.0.0
     dependencies:
       '@gaopeng123/hooks.use-resize': link:../useResize
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -759,7 +759,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -800,7 +800,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -841,7 +841,7 @@ importers:
       webpack-cli: ^4.8.0
       webpack-dev-server: ^4.0.0
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -922,7 +922,7 @@ importers:
       webpack-dev-server: ^4.0.0
     dependencies:
       '@gaopeng123/hooks.use-resize': link:../useResize
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     devDependencies:
       '@size-limit/preset-small-lib': 5.0.5_emzh4nhmqj2jat47tq6qyf7gqm
       '@types/react': 17.0.52
@@ -4805,58 +4805,67 @@ packages:
     resolution: {integrity: sha512-qprfWkn82Iw821mcKofJ5Pk9wgioHicxcQMxx+5zt5GSKoqdWvgG5AxVmpmUUjzTLPVSH5auBrhI93Deayn/DA==}
     dev: true
 
-  /@gaopeng123/fetch/0.3.4:
-    resolution: {integrity: sha512-bhaVvBCOh9zpifUD+XZuhq7r3va6CjXid4LIEP31aP1jpznziLPkdAjCmkBvrp5KZQSvQLAjfCn1l1I1ehNhBg==}
+  /@gaopeng123/fetch/0.3.10:
+    resolution: {integrity: sha512-VMPvERMohLBoF8Ak+lTpW04LM98aKhQ+x7LQ9mkwUrjI5El8AgznCX/FQFFHvtYO0HTIwbTrReYTvDw009MylQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.file': 1.1.14
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.file': 1.1.16-alpha.3
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
       node-fetch: 2.6.7
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /@gaopeng123/utils.date/1.1.15-alpha.2:
-    resolution: {integrity: sha512-p8oeyom+EMhrQnJElWa41beckk8XeMbnTfzCMvNLdF8leI0rvNYCvTqTRV+5AZfzeAp4YFPepILxPhNirehOZw==}
+  /@gaopeng123/utils.date/1.1.16-alpha.0:
+    resolution: {integrity: sha512-q+CV8wlCj+xY7FZDFpljQEgPfrpDDtCC5KjKX5T2WxSqezdFXG4tYTGuewsRHoCKQg2J1SNiq8Q2m8P4kB5Cjw==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     dev: false
 
-  /@gaopeng123/utils.file/1.1.14:
-    resolution: {integrity: sha512-c+NoW0w4D7sROkUxt6hRsohOSQKRAKopJbOaTsnPPf0Ax5HFpyES29Si2dDD5rLNWHtF0nP9vm/52NJByiEYlw==}
+  /@gaopeng123/utils.file/1.1.16-alpha.3:
+    resolution: {integrity: sha512-eMOPLU9mJN6R/69gqIoUPwHeG0CzCucGdW22uWYYCg8bUzm7SyPYMD1qYQDl0k+P8C7Ac0fpzFB0RefN4aM9Yg==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.object': 1.1.14
-      '@gaopeng123/utils.string': 1.1.14
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.object': 1.1.16-alpha.3
+      '@gaopeng123/utils.string': 1.1.16-alpha.3
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     dev: false
 
-  /@gaopeng123/utils.function/1.1.14:
-    resolution: {integrity: sha512-c1sfGegLkc18t4MgUuj93v5OJbufKu/snKja+j3VSQnsv4JooUqxzFjdpML4O0YXBCuKGXTohxwBTjOnvivZ7w==}
+  /@gaopeng123/utils.function/1.1.16-alpha.3:
+    resolution: {integrity: sha512-yhMxa4k8CkKbL5iDuWFZrKPJfZa0QJtnrkByRnxo5nssEJxikFjEBYub3F6/2fcMA8hHajsPiqnwMmLb+4utaw==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     dev: false
 
-  /@gaopeng123/utils.object/1.1.14:
-    resolution: {integrity: sha512-Hnj188t7hLml456H8r1p8u2kDwOTDLI6oVy8swJLZoIWjFC6yTjyKMZwgT24I1n0WYgLnFEQij4kOXp7F5dQEg==}
+  /@gaopeng123/utils.object/1.1.16-alpha.3:
+    resolution: {integrity: sha512-CTgejF8obuZ+DStmLoqBpybhbh5NxxbH2YX6Bd8rKHNgOss6If4dH+d34SKIK7uwpb2zWABxKL8r/UfC0z4HOQ==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
+      '@gaopeng123/utils.string': 1.1.16-alpha.2
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     dev: false
 
-  /@gaopeng123/utils.string/1.1.14:
-    resolution: {integrity: sha512-gUE7dS1rrmyJTtSY4L2FOgmWeHV9Ulb//q1y4lC+nmHBe+r1ar+zmYCH8hoIVPvfFhbXl16ljsjCq88NPj8/Vg==}
+  /@gaopeng123/utils.string/1.1.16-alpha.2:
+    resolution: {integrity: sha512-CvLSdy3H/WoYD7hgXO5iNmE6yZtiOyL7VzTx0aPa9ex93jUH/6R1tsfDrgoJ737e4RRkxbwsidhhOaObEJFe7w==}
     engines: {node: '>=10'}
     dependencies:
-      '@gaopeng123/utils.function': 1.1.14
-      '@gaopeng123/utils.types': 1.1.14
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
     dev: false
 
-  /@gaopeng123/utils.types/1.1.14:
-    resolution: {integrity: sha512-Mhs9dhuhSqR1lK+vZgEDFN8ELG2G7y7KEYoEHZU7KmC2DnhzbLkzZZHdXukglAko/9Zp26VvMLiQ63rDtjTKkg==}
+  /@gaopeng123/utils.string/1.1.16-alpha.3:
+    resolution: {integrity: sha512-BJYgeM75sZ8CsahJBnZq5pbsRIOyA3ti7I71MZ9Ha7vf3QM7TkQNQdY8y6OAeDBf+4LXRqAhf5+B/FFFJrP6aA==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@gaopeng123/utils.function': 1.1.16-alpha.3
+      '@gaopeng123/utils.types': 1.1.16-alpha.0
+    dev: false
+
+  /@gaopeng123/utils.types/1.1.16-alpha.0:
+    resolution: {integrity: sha512-pbwGMPNA5Zgd+3eqjEqpyZP3zxel7WwMR2yfXFuVrWWLrBOKr3HfxYDzg2N54pqt+WPPfvP/AQqBRYKSvU1cvw==}
     engines: {node: '>=10'}
     dev: false
 
@@ -9020,7 +9029,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       webpack: 5.75.0_webpack-cli@4.10.0
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
     dev: true
 
   /@webpack-cli/info/1.5.0_webpack-cli@4.10.0:
@@ -9029,7 +9038,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       envinfo: 7.8.1
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
     dev: true
 
   /@webpack-cli/serve/1.7.0_ixpxa6msyrc3obwec7as2lygbu:
@@ -22835,7 +22844,7 @@ packages:
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       watchpack: 2.4.0
-      webpack-cli: 4.10.0_ixwfotxft53uv5r5hjf7zsiiya
+      webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - '@swc/core'
