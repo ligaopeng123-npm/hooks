@@ -9,6 +9,9 @@ import { join, dirname } from 'path';
 function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, 'package.json')));
 }
+// 添加babel.config.json文件解决storybook报错问题 Add @babel/preset-flow ...
+// https://github.com/storybookjs/storybook/issues/20423
+// https://github.com/storybookjs/storybook/pull/20341
 const config: StorybookConfig = {
   stories: [
     '../stories/**/*.mdx',
