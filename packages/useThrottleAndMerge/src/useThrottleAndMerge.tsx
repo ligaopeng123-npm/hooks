@@ -11,42 +11,37 @@
  * @版权所有: gaopeng123
  *
  **********************************************************************/
-import React, { useEffect, useRef, useCallback, useState, useLayoutEffect } from 'react';
+import React, { useEffect, useRef, useCallback, useState } from 'react';
 import { createThrottle, throttleOptions, ThrottleOptions } from "@gaopeng123/utils.function";
 
 type Fn = (...props: any) => any;
-export type Fns = {[key:string]: Fn};
+export type Fns = { [key: string]: Fn };
 
 export const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []) => {
-    const {current} = useRef<any>({fn, timer: 0});
+    const { current } = useRef<any>({ fn, timer: 0 });
+    const [isFns] = useState(typeof fn !== 'function');
     useEffect(function () {
-        current.data = [];
+        current.data = isFns ? {} : [];
         current.timmer = null;
-        current.fn = ()=> {
+        current.fn = () => {
             clearTimeout(current.timmer);
-            current.timmer = setTimeout(()=> {
+            current.timmer = setTimeout(() => {
                 if (!current.timer) {
                     current.timer = 0;
                 }
             }, wait);
-            if (current.data.length) {
-                if (typeof fn === 'function') {
-                    // @ts-ignore
-                    fn([...current.data]);
+            if (isFns ? Object.keys(current.data).length : current.data.legnth) {
+                if (!isFns) {
+                    (fn as Fn)(current.data);
                 } else {
                     for (const cFn in fn) {
-                        const currentData = current.data.filter((dataItem: any)=> {
-                            return dataItem[cFn];
-                        }).map((dataItem: any)=> {
-                            return dataItem[cFn];
-                        });
-                        if (currentData?.length) {
-                            fn[cFn](currentData);
+                        if (current.data[cFn]?.length) {
+                            (fn as Fns)[cFn](current.data[cFn]);
                         }
                     }
                 }
             }
-            current.data = [];
+            current.data = isFns ? {} : [];
         };
     }, [fn]);
 
@@ -55,13 +50,21 @@ export const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: T
             leading: true,
             type: 2,
         }, options, {
-            notThrottle: (data: any) => {
-                current.data.push(data);
+            notThrottle: (result: any) => {
+                if (isFns) {
+                    const key = result.__key;
+                    if (!current.data[key]) {
+                        current.data[key] = [];
+                    }
+                    current.data[key].push(result.data);
+                } else {
+                    current.data.push(result);
+                }
                 if (options.notThrottle) {
-                    options.notThrottle(data);
+                    options.notThrottle(result);
                 }
             },
-            clearTimeout: (now: any)=> {
+            clearTimeout: (now: any) => {
                 current.timer = now;
             }
         })), current.timer);

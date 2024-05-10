@@ -20,14 +20,17 @@ const TestUseThrottleAndMergeFns: React.FC<TestUseThrottleAndMergeFnsProps> = (p
     const [events, setEvents] = useState<any>(ref.current);
     // 事件源基于key来区分；
     // 例如：a函数接受事件a，b函数接受事件b
-    const {a: onClick1, b: onClick2} = useThrottleAndMergeFns({a: (res: any)=> {
-            ref.current.a = ref.current.a + res.length;
-            setEvents(Object.assign({}, ref.current));
-            console.log(22)
-        }, b: (res: any)=> {
-            ref.current.b = ref.current.b + res.length;
-            setEvents(Object.assign({}, ref.current));
-        }}, 1000);
+    const onClickA = (res: any)=> {
+        ref.current.a = ref.current.a + res.length;
+        setEvents(Object.assign({}, ref.current));
+    }
+
+    const onClickB = (res: any)=> {
+        ref.current.b = ref.current.b + res.length;
+        setEvents(Object.assign({}, ref.current));
+    }
+
+    const {a: onClick1, b: onClick2} = useThrottleAndMergeFns({a: onClickA, b: onClickB}, 1000);
 
     useEffect(()=> {
         const bth: any = document.querySelector('#TestUseThrottleAndMerge-test1')
@@ -38,6 +41,7 @@ const TestUseThrottleAndMergeFns: React.FC<TestUseThrottleAndMergeFnsProps> = (p
                 bth.click();
                 setTimeout(()=> {
                     // @ts-ignore
+                    bth2.click();
                     bth2.click();
                 }, Math.random() * 10)
                 loop();

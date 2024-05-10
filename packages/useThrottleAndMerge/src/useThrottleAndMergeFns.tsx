@@ -19,14 +19,15 @@ import { useThrottleAndMerge, Fns } from "./useThrottleAndMerge";
  * @param fns
  * @param wait
  */
-export const useThrottleAndMergeFns = (fns: Fns, wait: number = 200)=> {
+export const useThrottleAndMergeFns = (fns: Fns, wait: number = 200) => {
     const onClick = useThrottleAndMerge(fns, wait);
     const [currentFns, setFns] = useState<any>({});
-    useLayoutEffect(()=> {
-        const c:Fns = {};
+    useLayoutEffect(() => {
+        const c: Fns = {};
         for (const fKey in fns) {
-            c[fKey] = (data)=> {
-                onClick({[fKey]: data});
+            c[fKey] = (data) => {
+                // 基于事件的key将数据拼接到data上
+                onClick({ __key: fKey, data: data });
             }
         }
         setFns(c);
