@@ -30,7 +30,7 @@ export const useThrottleAndMerge = (fn: Fn | Fns, wait: number = 200, options: T
                     current.timer = 0;
                 }
             }, wait);
-            if (isFns ? Object.keys(current.data).length : current.data.legnth) {
+            if (isFns ? Object.keys(current.data).length : current.data.length) {
                 if (!isFns) {
                     (fn as Fn)(current.data);
                 } else {
