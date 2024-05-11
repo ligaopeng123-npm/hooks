@@ -1,4 +1,38 @@
-## [0.1.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.6...v0.1.7) (2024-01-11)
+## [0.7.9-alpha.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.9-alpha.0...v0.7.9-alpha.1) (2024-05-11)
+
+
+### Features
+
+* changeVsesion.js ([15a8e73](https://github.com/ligaopeng123-npm/hooks/commit/15a8e73cedae5ddeb3d264d9726cca24bb54d752))
+
+
+
+## [0.7.9-alpha.0](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.8...v0.7.9-alpha.0) (2024-05-10)
+
+
+### Bug Fixes
+
+* useThrottleAndMergeFns使用对象缓存数据，不再遍历数据，提高性能 ([8f9186a](https://github.com/ligaopeng123-npm/hooks/commit/8f9186a3385ec530051f903271d3fa390345f898))
+* 解决storybook ts报错问题 ([a222464](https://github.com/ligaopeng123-npm/hooks/commit/a2224648e5c38bb9278304b228cd3afc044a6080))
+
+
+
+## [0.7.8](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.7...v0.7.8) (2024-02-01)
+
+
+### Bug Fixes
+
+* tree shaking ([317d88d](https://github.com/ligaopeng123-npm/hooks/commit/317d88dc5eb25df6c2ab0d176d226c875db3d149))
+* tree shaking ([c6adf47](https://github.com/ligaopeng123-npm/hooks/commit/c6adf472864335f6c6f70af94c8fe366dee8d646))
+
+
+
+## [0.7.7](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.6...v0.7.7) (2024-01-29)
+
+
+### Bug Fixes
+
+* 删除peerDependencies ([41b1a9b](https://github.com/ligaopeng123-npm/hooks/commit/41b1a9b7fbe8418c37ba82dfedc49f88f5ea68d0))
 
 
 

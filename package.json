@@ -1,5 +1,5 @@
 {
-  "version": "0.7.9-alpha.0",
+  "version": "0.7.9-alpha.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,6 +24,7 @@
     "test": "lerna exec --ignore=@gaopeng123/hooks -- pnpm run test",
     "push": "lerna publish",
     "pushAll": "lerna exec -- pnpm run push",
+    "lernaPublish": "lerna publish && npm run changeVsesion && npm run changelog",
     "changeVsesion": "node changeVsesion.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "lint": "tsdx lint",
