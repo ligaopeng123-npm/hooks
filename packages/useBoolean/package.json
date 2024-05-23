@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-boolean",
-    "version": "0.7.8",
+    "version": "0.7.9",
     "description": "boolean类型设置",
     "keywords": [
         "boolean"

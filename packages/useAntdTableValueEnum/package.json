@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-antd-table-value-enum",
-    "version": "0.1.0",
+    "version": "0.7.9",
     "description": "处理antd table valueEnum",
     "keywords": [
         "antd",

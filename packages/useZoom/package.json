@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-zoom",
-    "version": "0.7.8",
+    "version": "0.7.9",
     "description": "窗口缩放",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -59,7 +59,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-resize": "^0.7.8",
+        "@gaopeng123/hooks.use-resize": "^0.7.9",
         "@gaopeng123/utils.types": "latest"
     },
     "gitHead": "a3192603f12f9a0a3af7aac55512787b6a1ac569"
