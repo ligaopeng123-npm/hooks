@@ -69,5 +69,7 @@ export type { OperateConfig } from "@gaopeng123/hooks.use-reload-after-stationar
 
 export { useAntdTableSelection } from "@gaopeng123/hooks.use-antd-table-selection";
 export type { useAntdTableSelectionProps } from "@gaopeng123/hooks.use-antd-table-selection";
+export { useAntdTableValeEnum } from "@gaopeng123/hooks.use-antd-table-value-enum";
+export type { AntdTableValeEnumProps } from "@gaopeng123/hooks.use-antd-table-value-enum";
 
 export { useEffectOnceInStrictMode } from "@gaopeng123/hooks.use-effect-once-in-strict-mode";
