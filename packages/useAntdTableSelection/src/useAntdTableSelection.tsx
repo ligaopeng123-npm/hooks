@@ -9,24 +9,32 @@
  * @date: 2023-08-02 08:29:46
  *
  **********************************************************************/
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export type useAntdTableSelectionProps = {
-    idKey: string
+    idKey: string,
+    defaultSelectedRowKeys?: React.Key[]
 };
 export const useAntdTableSelection = (props: useAntdTableSelectionProps) => {
-    const {idKey} = props;
+    const { idKey, defaultSelectedRowKeys } = props;
     const [selectedRows, setSelectedRows] = useState<Array<any>>([]);
+    const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>();
     const rowSelection = {
         onChange: (selectedRowKeys: React.Key[], selectedRows: any) => {
             setSelectedRows(selectedRows);
+            setSelectedRowKeys(selectedRows?.map((item: any) => {
+                return item[idKey]
+            }));
         },
         getCheckboxProps: (record: any) => ({
             name: record[idKey],
         }),
-        selectedRowKeys: selectedRows?.map((item: any) => {
-            return item[idKey]
-        })
+        selectedRowKeys: selectedRowKeys
     };
-    return [{selectedRows, rowSelection}, {clearSelected: () => setSelectedRows([])}]
+    useEffect(() => {
+        if (defaultSelectedRowKeys && defaultSelectedRowKeys.length > 0) {
+            setSelectedRowKeys(defaultSelectedRowKeys);
+        }
+    }, [defaultSelectedRowKeys]);
+    return [{ selectedRows, selectedRowKeys, rowSelection }, { clearSelected: () => setSelectedRows([]) }]
 }
