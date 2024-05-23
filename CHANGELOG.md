@@ -1,3 +1,32 @@
+## [0.7.10-alpha.0](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.9...v0.7.10-alpha.0) (2024-05-23)
+
+
+### Features
+
+* 0.7.9 ([9f943aa](https://github.com/ligaopeng123-npm/hooks/commit/9f943aa93dabe8f4a39fdc71a3a62ab549ff104f))
+* add "push": "pnpm run build && pnpm publish --access public --no-git-checks", ([3f3586a](https://github.com/ligaopeng123-npm/hooks/commit/3f3586a8e5ddb294ccc93dc95e4b4138537117e4))
+
+
+
+## [0.7.9](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.9-alpha.2...v0.7.9) (2024-05-23)
+
+
+### Features
+
+* add @gaopeng123/hooks.use-antd-table-value-enum ([c5e3b07](https://github.com/ligaopeng123-npm/hooks/commit/c5e3b077188fe5b53eab677fae4da0de5d8a9288))
+* hooks add @gaopeng123/hooks.use-antd-table-value-enum ([d4ac81d](https://github.com/ligaopeng123-npm/hooks/commit/d4ac81d93524473ea747cf84ecf4dbba3dbebfbd))
+
+
+
+## [0.7.9-alpha.2](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.9-alpha.1...v0.7.9-alpha.2) (2024-05-23)
+
+
+### Features
+
+* useAntdTableSelection add props.defaultSelectedRowKeys and return selectedRowKeys ([dfba63d](https://github.com/ligaopeng123-npm/hooks/commit/dfba63dae850359824f34ff8e96c2bc08c301224))
+
+
+
 ## [0.7.9-alpha.1](https://github.com/ligaopeng123-npm/hooks/compare/v0.7.9-alpha.0...v0.7.9-alpha.1) (2024-05-11)
 
 
