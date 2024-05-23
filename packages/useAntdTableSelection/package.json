@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-antd-table-selection",
-    "version": "0.7.8",
+    "version": "0.7.9-alpha.2",
     "description": "antd table selection",
     "keywords": [
         "antd",
