@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-scale",
-    "version": "0.7.9",
+    "version": "0.7.10-alpha.0",
     "description": "窗口缩放",
     "author": "ligaopeng123 <gaopeng@123>",
     "homepage": "https://github.com/ligaopeng123-npm/hooks#readme",
@@ -59,7 +59,7 @@
         "webpack-dev-server": "^4.0.0"
     },
     "dependencies": {
-        "@gaopeng123/hooks.use-resize": "^0.7.9",
+        "@gaopeng123/hooks.use-resize": "^0.7.10-alpha.0",
         "@gaopeng123/utils.types": "latest"
     },
     "gitHead": "0d3070b66711af781089a00e8615aab926f27e0c"

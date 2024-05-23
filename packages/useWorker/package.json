@@ -1,6 +1,6 @@
 {
     "name": "@gaopeng123/hooks.use-worker",
-    "version": "0.7.9",
+    "version": "0.7.10-alpha.0",
     "description": "web worker使用",
     "keywords": [
         "web",

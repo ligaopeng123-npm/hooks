@@ -1,6 +1,6 @@
 {
   "name": "@gaopeng123/hooks.use-reload-after-stationary",
-  "version": "0.7.9",
+  "version": "0.7.10-alpha.0",
   "description": "reload after stationary",
   "keywords": [
     "reload",
