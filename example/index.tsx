@@ -23,6 +23,8 @@ import TestUseReloadAfterStationary from "./components/TestUseReloadAfterStation
 import TestUseThrottleAndMerge from "./components/TestUseThrottleAndMerge";
 import TestUseThrottleAndMergeFns from "./components/TestUseThrottleAndMergeFns";
 import TestUseEffectOnceInStrictMode from "./components/TestUseEffectOnceInStrictMode";
+import TestRender from "./components/TestRender";
+import TestTabsMessage from "./components/TestTabsMessage";
 
 
 const App = () => {
@@ -48,6 +50,8 @@ const App = () => {
                         <Link to="/useBoolean">useBoolean</Link>
                         <Link to="/useReloadAfterStationary">useReloadAfterStationary</Link>
                         <Link to="/useEffectOnceInStrictMode">useEffectOnceInStrictMode</Link>
+                        <Link to="/testRender">TestRender</Link>
+                        <Link to="/testTabsMessage">TestTabsMessage</Link>
                     </div>
                     <div className={'card-body'}>
                         <Switch>
@@ -101,6 +105,12 @@ const App = () => {
                             </Route>
                             <Route path="/useEffectOnceInStrictMode">
                                 <TestUseEffectOnceInStrictMode/>
+                            </Route>
+                            <Route path="/testRender">
+                                <TestRender/>
+                            </Route>
+                            <Route path="/testTabsMessage">
+                                <TestTabsMessage/>
                             </Route>
                         </Switch>
                     </div>
