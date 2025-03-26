@@ -4,7 +4,7 @@ import type {ThrottleOptions} from "@gaopeng123/utils.function"
 
 type Fn = (...props: any) => any;
 
-export const useThrottle = (fn: Fn, wait: number = 200, options: ThrottleOptions = {}, dep: any[] = []) => {
+export const useThrottle = (fn: Fn, wait: number = 200, options: ThrottleOptions<any[]> = {}, dep: any[] = []) => {
     const {current} = useRef<any>({fn, timer: 0});
     useEffect(function () {
         current.fn = fn;
